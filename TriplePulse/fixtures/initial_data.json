@@ -88,6 +88,110 @@
       }
    }, 
    {
+      "pk": 12, 
+      "model": "cms.placeholder", 
+      "fields": {
+         "slot": "content", 
+         "default_width": null
+      }
+   }, 
+   {
+      "pk": 13, 
+      "model": "cms.placeholder", 
+      "fields": {
+         "slot": "right_column", 
+         "default_width": null
+      }
+   }, 
+   {
+      "pk": 14, 
+      "model": "cms.placeholder", 
+      "fields": {
+         "slot": "content", 
+         "default_width": null
+      }
+   }, 
+   {
+      "pk": 15, 
+      "model": "cms.placeholder", 
+      "fields": {
+         "slot": "content", 
+         "default_width": null
+      }
+   }, 
+   {
+      "pk": 16, 
+      "model": "cms.placeholder", 
+      "fields": {
+         "slot": "right_column", 
+         "default_width": null
+      }
+   }, 
+   {
+      "pk": 17, 
+      "model": "cms.placeholder", 
+      "fields": {
+         "slot": "content", 
+         "default_width": null
+      }
+   }, 
+   {
+      "pk": 18, 
+      "model": "cms.placeholder", 
+      "fields": {
+         "slot": "right_column", 
+         "default_width": null
+      }
+   }, 
+   {
+      "pk": 19, 
+      "model": "cms.placeholder", 
+      "fields": {
+         "slot": "content", 
+         "default_width": null
+      }
+   }, 
+   {
+      "pk": 20, 
+      "model": "cms.placeholder", 
+      "fields": {
+         "slot": "right_column", 
+         "default_width": null
+      }
+   }, 
+   {
+      "pk": 21, 
+      "model": "cms.placeholder", 
+      "fields": {
+         "slot": "content", 
+         "default_width": null
+      }
+   }, 
+   {
+      "pk": 22, 
+      "model": "cms.placeholder", 
+      "fields": {
+         "slot": "right_column", 
+         "default_width": null
+      }
+   }, 
+   {
+      "pk": 23, 
+      "model": "cms.placeholder", 
+      "fields": {
+         "slot": "content", 
+         "default_width": null
+      }
+   }, 
+   {
+      "pk": 24, 
+      "model": "cms.placeholder", 
+      "fields": {
+         "slot": "right_column", 
+         "default_width": null
+      }
+   }, 
+   {
       "pk": 1, 
       "model": "cms.cmsplugin", 
       "fields": {
@@ -152,6 +256,23 @@
          "tree_id": 4, 
          "position": 0, 
          "placeholder": 10, 
+         "plugin_type": "TextPlugin"
+      }
+   }, 
+   {
+      "pk": 5, 
+      "model": "cms.cmsplugin", 
+      "fields": {
+         "rght": 2, 
+         "changed_date": "2013-03-07T10:26:03.202Z", 
+         "parent": null, 
+         "language": "en", 
+         "level": 0, 
+         "creation_date": "2013-03-07T10:25:34.142Z", 
+         "lft": 1, 
+         "tree_id": 5, 
+         "position": 0, 
+         "placeholder": 23, 
          "plugin_type": "TextPlugin"
       }
    }, 
@@ -359,6 +480,40 @@
       }
    }, 
    {
+      "pk": 7, 
+      "model": "cms.page", 
+      "fields": {
+         "rght": 2, 
+         "navigation_extenders": "", 
+         "site": 1, 
+         "creation_date": "2013-03-07T10:25:15.432Z", 
+         "lft": 1, 
+         "in_navigation": false, 
+         "reverse_id": null, 
+         "login_required": false, 
+         "created_by": "stephen", 
+         "publication_end_date": null, 
+         "moderator_state": 0, 
+         "template": "cms/blog-post-two-column.html", 
+         "tree_id": 7, 
+         "placeholders": [
+            23, 
+            24
+         ], 
+         "changed_date": "2013-03-07T10:26:07.047Z", 
+         "limit_visibility_in_menu": null, 
+         "parent": null, 
+         "publisher_state": 1, 
+         "soft_root": false, 
+         "publication_date": "2013-03-07T10:26:07.044Z", 
+         "publisher_public": null, 
+         "level": 0, 
+         "changed_by": "stephen", 
+         "publisher_is_draft": true, 
+         "published": true
+      }
+   }, 
+   {
       "pk": 1, 
       "model": "cms.title", 
       "fields": {
@@ -473,6 +628,25 @@
       }
    }, 
    {
+      "pk": 7, 
+      "model": "cms.title", 
+      "fields": {
+         "menu_title": "", 
+         "redirect": "", 
+         "meta_keywords": "", 
+         "page_title": "", 
+         "language": "en", 
+         "title": "Thank you for signing up!", 
+         "has_url_overwrite": false, 
+         "application_urls": "", 
+         "creation_date": "2013-03-07T10:25:15.449Z", 
+         "page": 7, 
+         "path": "thankyou", 
+         "meta_description": "", 
+         "slug": "thankyou"
+      }
+   }, 
+   {
       "pk": 1, 
       "model": "text.text", 
       "fields": {
@@ -501,6 +675,13 @@
       }
    }, 
    {
+      "pk": 5, 
+      "model": "text.text", 
+      "fields": {
+         "body": "<h3>A few things.</h3>\n<ol>\n\t<li>We'll ship your kickass stack of sports nutrition within three days of your order</li>\t<li>Each subsequent pack will come on that same day of the month.</li>\t<li>We'll also send a free \"aid station\" later in the month with samples, discounts and exclusives.</li>\t<li>Want to earn FREE stacks? Invite friends and when they sign up for a 3-month subscription, you'll get a free month.</li></ol>\n<h3 class=\"gray\">WIN.</h3>\n<p>The TriplePulse Team</p>"
+      }
+   }, 
+   {
       "pk": 1, 
       "model": "auth.user", 
       "fields": {
@@ -510,7 +691,7 @@
          "is_active": true, 
          "is_superuser": true, 
          "is_staff": true, 
-         "last_login": "2013-03-07T00:26:04.075Z", 
+         "last_login": "2013-03-07T10:24:42.940Z", 
          "groups": [], 
          "user_permissions": [], 
          "password": "pbkdf2_sha256$10000$URRi5i4JhDzS$zcnRS6t0lzx0hS8hZDqs3rkiHhSBvzLhb+nHDbkIwQE=", 

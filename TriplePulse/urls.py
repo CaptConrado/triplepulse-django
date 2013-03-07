@@ -30,7 +30,6 @@ urlpatterns = patterns('django.views.generic.simple',
     (r'^$', 'direct_to_template', {'template': 'index.html'}),
     (r'^channel$', 'direct_to_template', {'template': 'channel.html'}),
     (r'^pinboard/?$', 'direct_to_template', {'template': 'pinboard.html'}),
-    (r'^thankyou/?$', 'direct_to_template', {'template': 'thankyou.html'}),
     (r'^stacks/?$', 'direct_to_template', {'template': 'stacks.html'}),
     (r'^admin/', include(admin.site.urls)),
 ) + urlpatterns
