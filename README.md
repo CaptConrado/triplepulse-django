@@ -5,22 +5,24 @@ Triplepulse's full Django application. Django CMS is used for the social pinboar
 
 Deploying
 ----------
-1.) Create a local_settings.py file. local_settings_example.py should be a good reference. This file defines your API keys,
+1.) Use pip to install the packages listed in requirement.txt. To do this, run "pip install -r requirements.txt"
+
+2.) Create a local_settings.py file. local_settings_example.py should be a good reference. This file defines your API keys,
 crypto keys, database connections, and debugging settings. It will be omitted from GitHub for security reasons.
 
-2.) Make sure the database you linked to in local_settings.py is running, then run "python manage.py
+3.) Make sure the database you linked to in local_settings.py is running, then run "python manage.py
 syndcb," then "python manage.py migrate"
 
-3.) If fixtures weren't loaded in by syncb, run "python manage.py loaddata TriplePulse/fixtures/initial_data.json" to import
+4.) If fixtures weren't loaded in by syncb, run "python manage.py loaddata TriplePulse/fixtures/initial_data.json" to import
 pages that are stored in Django CMS (like terms, about, etc.)
 
-4.) Create a first superuser by running "python manage.py createsuperuser"
+5.) Create a first superuser by running "python manage.py createsuperuser"
 
-5.) For static files, you may want to use a cdn. Use "python manage.py collectstatic" to collect the static files in the
+6.) For static files, you may want to use a cdn. Use "python manage.py collectstatic" to collect the static files in the
 static root. Copy these to a CDN, then set the static root to the CDN address. For more info:
 https://docs.djangoproject.com/en/dev/howto/static-files/#staticfiles-production
 
-6.) Run whatever webserver you choose (App Engine makes this easy, or Nginx with Gunicorn is easy to setup)
+7.) Run whatever webserver you choose (App Engine makes this easy, or Nginx with Gunicorn is easy to setup)
 
 You're done!
 

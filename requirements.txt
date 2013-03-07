@@ -1,0 +1,9 @@
+Django==1.4
+stripe
+django-cms
+south
+django-mptt
+django-classy-tags
+dango-sekizai
+south
+html5lib
