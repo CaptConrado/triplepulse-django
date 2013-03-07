@@ -12,7 +12,15 @@ class Shipment(models.Model):
     state = models.CharField(max_length=20, blank=True)
     zip = models.CharField(max_length=10)
     tracking_code = models.CharField(max_length=255, blank=True)
+    STANDARD = '0'
+    AID_STATION = '1'
+    TYPE_CHOICES = (
+        (STANDARD, 'Standard'),
+        (AID_STATION, 'Aid Station'),
 
+        )
+
+    type = models.integerField(choices=TYPE_CHOICES)
     def __unicode__(self):
         return unicode(self.user) + ' | ' + unicode(self.date)
 

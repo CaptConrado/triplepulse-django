@@ -8,7 +8,7 @@ class UserProfileInline(admin.TabularInline):
 
 class ShipmentAdmin(admin.ModelAdmin):
     list_filter = ('shipped',)
-    list_display = ('date', 'name', 'street1', 'street2', 'city', 'state', 'zip', 'shipped', 'tracking_code')
+    list_display = ('date', 'type', 'name', 'street1', 'street2', 'city', 'state', 'zip', 'shipped', 'tracking_code')
     list_editable = ('shipped', 'tracking_code')
     ordering = ('shipped', 'date',)
 

@@ -286,6 +286,7 @@ def create_shipments(user, plan):
     months = STRIPE_PLANS[plan]['months']
     startDay = datetime.date.today() + datetime.timedelta(days=3)
     for month in range(0, (months)):
+#        Standard shipment
         ship_date = startDay + datetime.timedelta(days=(31*month))
         user.shipment_set.create(
             date = ship_date,
@@ -296,7 +297,22 @@ def create_shipments(user, plan):
             city = user_profile.city,
             state = user_profile.state,
             zip = user_profile.zip,
+            type = 0,
         )
+#        Aid station shipment
+        ship_date = ship_date + datetime.timedelta(days=20)
+        user.shipment_set.create(
+            date = ship_date,
+            shipped = False,
+            name = user.first_name,
+            street1 = user_profile.street1,
+            street2 = user_profile.street2,
+            city = user_profile.city,
+            state = user_profile.state,
+            zip = user_profile.zip,
+            type = 1,
+        )
+
     return True
 
 def update_future_orders(user):
