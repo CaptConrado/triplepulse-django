@@ -1,0 +1,17 @@
+{% extends "settings.html" %}
+
+{% block extra_js %}
+<script type="text/javascript" src="https://js.stripe.com/v1/"></script>
+<script type="text/javascript" src="{{ STATIC_URL }}js/account/billing.js"></script>
+{%endblock%}
+
+{% block settingsContent %}
+<input type="hidden" id="stripe_publishable" value="{{ stripe_publishable }}" />
+<div class="paymentErrors"></div>
+<form method="post" id="paymentForm">
+    {% csrf_token %}
+    {{ form }}
+   <p></p><input type="submit" value="Update" class="btn btn-primary" /></p>
+</form>
+{% endblock %}
+

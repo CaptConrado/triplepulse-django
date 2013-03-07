@@ -1,0 +1,70 @@
+[
+    {
+        "pk":1,
+        "model":"pinboard.category",
+        "fields":{
+            "verbose_name":"Training Tips",
+            "name":"tips"
+        }
+    },
+    {
+        "pk":2,
+        "model":"pinboard.category",
+        "fields":{
+            "verbose_name":"Science",
+            "name":"science"
+        }
+    },
+    {
+        "pk":3,
+        "model":"pinboard.category",
+        "fields":{
+            "verbose_name":"TriplePulse Athletes",
+            "name":"athletes"
+        }
+    },
+    {
+        "pk":4,
+        "model":"pinboard.category",
+        "fields":{
+            "verbose_name":"Results",
+            "name":"results"
+        }
+    },
+    {
+        "pk":1,
+        "model":"pinboard.imagesize",
+        "fields":{
+            "width":190,
+            "name":"190px by 190px",
+            "height":190
+        }
+    },
+    {
+        "pk":2,
+        "model":"pinboard.imagesize",
+        "fields":{
+            "width":190,
+            "name":"190px by 270px",
+            "height":270
+        }
+    },
+    {
+        "pk":3,
+        "model":"pinboard.imagesize",
+        "fields":{
+            "width":410,
+            "name":"410px by 410px",
+            "height":410
+        }
+    },
+    {
+        "pk":4,
+        "model":"pinboard.imagesize",
+        "fields":{
+            "width":410,
+            "name":"410px by 270px",
+            "height":270
+        }
+    }
+]

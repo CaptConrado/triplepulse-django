@@ -1,0 +1,46 @@
+{% extends "skeleton/_base.html" %}
+
+{% block title %}
+TriplePulse
+{% endblock %}
+
+{% block extra_css %}
+
+<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/text.css" />
+
+{%endblock%}
+
+{% block extra_js %}
+{%endblock%}
+
+{% block content %}
+
+<div class="hook">
+    <div>
+        <div class="container">
+            <h1>
+                {% block postTitle %}
+                {% endblock %}
+            </h1>
+        </div>
+    </div>
+</div>
+<div class="container">
+    {% block contentContainer %}
+    <div class="row">
+        <div class="span8">
+            {% block postBody %}
+            {% endblock %}
+        </div>
+        <div class="span4">
+            {% block rightColumn %}
+                {% block postImage %}
+                {% endblock %}
+            {% endblock %}
+
+        </div>
+    </div>
+    {% endblock %}
+</div>
+
+{%endblock%}

@@ -1,0 +1,36 @@
+{% extends "skeleton/_base.html" %}
+
+{% block title %}
+    TriplePulse Social Pinboard
+{% endblock %}
+
+{% block extra_css %}
+
+	<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/pinboard.css" />
+	
+{%endblock%}
+
+{% block extra_js %}
+
+	<script type="text/javascript" src="{{ STATIC_URL }}js/jquery.masonry.min.js"></script>
+	<script type="text/javascript" src="{{ STATIC_URL }}js/pinboard.js"></script>
+
+{%endblock%}
+
+{% block content %}
+
+	<div class="pinboard">
+		<a href="#"><div class="logo centered">Triple Your Pulse</div></a>
+		<div class="pinboardNav">
+			<a class="btn" href="#athletes">TriplePulse Athletes</a>
+			<a class="btn" href="#science">Science</a>
+			<a class="btn" href="#tips">Training Tips</a>
+			<a class="btn" href="#results">Results</a>
+		</div>
+		<noscript>This page requires javascript. Please enable javascript and refresh the page.</noscript>
+		<div id="posts">
+		</div>
+		<a class="btn centered btn-primary" href='#' id="loadMore">Load More</a>
+	</div>
+
+{%endblock%}

@@ -1,0 +1,86 @@
+{% extends "skeleton/_base.html" %}
+
+{% block title %}
+    TriplePulse: Our Stacks
+{% endblock %}
+
+{% block extra_css %}
+
+	<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/stacks.css" />
+	
+{%endblock%}
+
+{% block extra_js %}
+
+	<script type="text/javascript" src="{{ STATIC_URL }}js/stacks.js"></script>
+
+{%endblock%}
+
+{% block content %}
+	
+	<div class="hook">
+		<div>
+			<div class="container">
+				<h1>Our Stacks</h1>
+				<p><a href="/signup" class="btn btn-primary">Select Your Plan</a></p>
+			</div>
+		</div>
+	</div>
+	<div class="section container infographics">
+		<div class="row">
+			<div class="span4">
+				<h3>Formulas by the pros</h3>
+				<p>Absorption, bioavailability, ratios created by experts and tested by the pros </p>
+				<div class="image atom"></div>
+			</div>
+			<div class="span4">
+				<h3>Pre, during & post workout</h3>
+				<p>A full stack of sports nutrition for a full month's worth of intense endurance training </p>
+				<div class="image clock"></div>
+			</div>
+			<div class="span4">
+				<h3>Expert guidance & tips</h3>
+				<p>Get plugged in to a community of fitness experts and pro athletes </p>
+				<div class="image notepad"></div>
+			</div>
+		</div>
+	</div>
+	<div class="section container partners">
+		<h2>
+			Our Partners
+			<span class="image">
+				USA Cycling, American College of Sports Medicine, FIFA, USA Swimming, John Hopkins Medicine, Olympics, IMG Academies
+			</span>
+		</h2>
+	</div>
+	<div class="container section bodyText">
+		<div class="row">
+			<div class="span8">
+				<h3>Full Stacks for the Full Month</h3>
+				<p>Become a TriplePulse member and every month you will receive all the supplements you need for a <strong>full month of endurance training</strong>. This is not just a "surprise box" or "swag bag" of sample sizes; this is a <strong>full stack</strong> of custom endurance nutrition to last the entire month. We also send members an “aid station” at the end of the month, with samples, discounts and exclusives.</p>
+
+				<h3>Get what the pros use</h3>
+				<p>Our monthly stacks were created and tested by professional athletes—triathletes, marathon runners, rowers, cyclists, swimmers, and more.  Our roster of athletes tracked their sustained energy levels, muscle fatigue, and recovery to hone in on a pack that not only could optimize their performance but could be as convenient and smooth as possible; these guys hate feeling like robots!</p>
+
+				<h3>Science</h3>
+				<p>We curate the sports nutrition you need to lay a healthy foundation--keep hydrated, maintain sustainable energy reserves, and prevent injury by replenishing depleted muscles. Our core tenants are maximum <a href="/pinboard#science">bioavailability</a>, <a href="/pinboard#science">synergy</a> within our stack, <a href="/pinboard#science">activation scheduling</a>, and <a href="/pinboard#science">continual feedback</a>. Dive into the science behind our pack.</p>
+
+				<h3>Constant Curating</h3>
+				<p>We don't rest! We love continually optimizing the precise makeup of our stack as we gather data from our athletes in the field and assess the latest peer-reviewed journals. It's a dynamic process. Give us feedback and check out what our <a href="/pinboard#results">community has to say</a>.</p>
+				
+			</div>
+			<div class="span4">
+				<p>Are you you ready to Go?</p>
+				<p>–</p>
+				<a class="btn btn-primary" href="/signup">Get Started<span class="arrow"></span></a>
+				<div class="image"></div>
+			</div>
+		</div>
+	</div>
+	<div class="clincher">
+		<div>
+			<h1>Ready to lead the pack?</h1>
+			<p><a href="/signup" class="btn btn-inverse">Get Started</a></p>
+		</div>
+	</div>
+{%endblock%}

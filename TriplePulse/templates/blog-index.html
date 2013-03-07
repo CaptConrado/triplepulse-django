@@ -1,0 +1,58 @@
+{% extends "text.html" %}
+{% load cms_tags sekizai_tags menu_tags %}
+
+{% block title %}
+TriplePulse Blog
+{% endblock %}
+
+{% block extra_css %}
+
+<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/text.css" />
+<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/blog.css" />
+
+{%endblock%}
+
+{% block extra_js %}
+{%endblock%}
+
+
+{% block postTitle %}
+    TriplePulse Blog
+{% endblock %}
+
+{% block postBody %}
+
+    {% for post in posts %}
+    <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+    <div class="preview">
+        {% for content_block in post.content_blocks %}
+        <div>
+            {{ content_block }}
+        </div>
+        {% endfor %}
+    </div>
+    {% endfor %}
+
+    <div>
+        {% if has_previous %}
+            <a class='previous' href="{{ previous }}">&#x00AB; Newer</a>
+
+        {% endif %}
+
+        {% if has_next %}
+            <a class='next' href="{{ next }}">&#x00AB; Older &#x00BB;</a>
+
+        {% endif %}
+
+    </div>
+
+{% endblock %}
+
+{% block rightColumn %}
+<div class="recentPosts">
+<h2>Featured</h2>
+<ul>
+    {% show_menu_below_id "blog" %}
+</ul>
+</div>
+{% endblock %}

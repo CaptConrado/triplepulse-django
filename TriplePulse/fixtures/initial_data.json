@@ -1,0 +1,521 @@
+[
+   {
+      "pk": 1, 
+      "model": "cms.placeholder", 
+      "fields": {
+         "slot": "content", 
+         "default_width": null
+      }
+   }, 
+   {
+      "pk": 2, 
+      "model": "cms.placeholder", 
+      "fields": {
+         "slot": "right_column", 
+         "default_width": null
+      }
+   }, 
+   {
+      "pk": 3, 
+      "model": "cms.placeholder", 
+      "fields": {
+         "slot": "content", 
+         "default_width": null
+      }
+   }, 
+   {
+      "pk": 4, 
+      "model": "cms.placeholder", 
+      "fields": {
+         "slot": "content", 
+         "default_width": null
+      }
+   }, 
+   {
+      "pk": 5, 
+      "model": "cms.placeholder", 
+      "fields": {
+         "slot": "right_column", 
+         "default_width": null
+      }
+   }, 
+   {
+      "pk": 6, 
+      "model": "cms.placeholder", 
+      "fields": {
+         "slot": "content", 
+         "default_width": null
+      }
+   }, 
+   {
+      "pk": 7, 
+      "model": "cms.placeholder", 
+      "fields": {
+         "slot": "right_column", 
+         "default_width": null
+      }
+   }, 
+   {
+      "pk": 8, 
+      "model": "cms.placeholder", 
+      "fields": {
+         "slot": "content", 
+         "default_width": null
+      }
+   }, 
+   {
+      "pk": 9, 
+      "model": "cms.placeholder", 
+      "fields": {
+         "slot": "right_column", 
+         "default_width": null
+      }
+   }, 
+   {
+      "pk": 10, 
+      "model": "cms.placeholder", 
+      "fields": {
+         "slot": "content", 
+         "default_width": null
+      }
+   }, 
+   {
+      "pk": 11, 
+      "model": "cms.placeholder", 
+      "fields": {
+         "slot": "right_column", 
+         "default_width": null
+      }
+   }, 
+   {
+      "pk": 1, 
+      "model": "cms.cmsplugin", 
+      "fields": {
+         "rght": 2, 
+         "changed_date": "2013-03-07T06:18:32.264Z", 
+         "parent": null, 
+         "language": "en", 
+         "level": 0, 
+         "creation_date": "2013-03-07T06:18:05.732Z", 
+         "lft": 1, 
+         "tree_id": 1, 
+         "position": 0, 
+         "placeholder": 4, 
+         "plugin_type": "TextPlugin"
+      }
+   }, 
+   {
+      "pk": 2, 
+      "model": "cms.cmsplugin", 
+      "fields": {
+         "rght": 2, 
+         "changed_date": "2013-03-07T06:20:06.742Z", 
+         "parent": null, 
+         "language": "en", 
+         "level": 0, 
+         "creation_date": "2013-03-07T06:19:55.423Z", 
+         "lft": 1, 
+         "tree_id": 2, 
+         "position": 0, 
+         "placeholder": 6, 
+         "plugin_type": "TextPlugin"
+      }
+   }, 
+   {
+      "pk": 3, 
+      "model": "cms.cmsplugin", 
+      "fields": {
+         "rght": 2, 
+         "changed_date": "2013-03-07T06:22:30.415Z", 
+         "parent": null, 
+         "language": "en", 
+         "level": 0, 
+         "creation_date": "2013-03-07T06:22:00.969Z", 
+         "lft": 1, 
+         "tree_id": 3, 
+         "position": 0, 
+         "placeholder": 8, 
+         "plugin_type": "TextPlugin"
+      }
+   }, 
+   {
+      "pk": 4, 
+      "model": "cms.cmsplugin", 
+      "fields": {
+         "rght": 2, 
+         "changed_date": "2013-03-07T09:22:18.788Z", 
+         "parent": null, 
+         "language": "en", 
+         "level": 0, 
+         "creation_date": "2013-03-07T09:21:42.332Z", 
+         "lft": 1, 
+         "tree_id": 4, 
+         "position": 0, 
+         "placeholder": 10, 
+         "plugin_type": "TextPlugin"
+      }
+   }, 
+   {
+      "pk": 1, 
+      "model": "cms.page", 
+      "fields": {
+         "rght": 2, 
+         "navigation_extenders": "", 
+         "site": 1, 
+         "creation_date": "2013-02-28T01:32:05.316Z", 
+         "lft": 1, 
+         "in_navigation": true, 
+         "reverse_id": "blog", 
+         "login_required": false, 
+         "created_by": "stephen", 
+         "publication_end_date": null, 
+         "moderator_state": 0, 
+         "template": "cms/blog-post-two-column.html", 
+         "tree_id": 1, 
+         "placeholders": [
+            1, 
+            2
+         ], 
+         "changed_date": "2013-03-07T06:20:51.235Z", 
+         "limit_visibility_in_menu": null, 
+         "parent": null, 
+         "publisher_state": 1, 
+         "soft_root": false, 
+         "publication_date": "2013-02-28T01:32:35.962Z", 
+         "publisher_public": null, 
+         "level": 0, 
+         "changed_by": "stephen", 
+         "publisher_is_draft": true, 
+         "published": true
+      }
+   }, 
+   {
+      "pk": 2, 
+      "model": "cms.page", 
+      "fields": {
+         "rght": 2, 
+         "navigation_extenders": "", 
+         "site": 1, 
+         "creation_date": "2013-02-28T01:32:46.425Z", 
+         "lft": 1, 
+         "in_navigation": true, 
+         "reverse_id": null, 
+         "login_required": false, 
+         "created_by": "stephen", 
+         "publication_end_date": null, 
+         "moderator_state": 0, 
+         "template": "cms/pinboard-bare.html", 
+         "tree_id": 2, 
+         "placeholders": [
+            3
+         ], 
+         "changed_date": "2013-03-07T06:21:01.358Z", 
+         "limit_visibility_in_menu": null, 
+         "parent": null, 
+         "publisher_state": 1, 
+         "soft_root": false, 
+         "publication_date": "2013-02-28T01:32:58.831Z", 
+         "publisher_public": null, 
+         "level": 0, 
+         "changed_by": "stephen", 
+         "publisher_is_draft": true, 
+         "published": true
+      }
+   }, 
+   {
+      "pk": 3, 
+      "model": "cms.page", 
+      "fields": {
+         "rght": 2, 
+         "navigation_extenders": "", 
+         "site": 1, 
+         "creation_date": "2013-03-07T06:17:10.414Z", 
+         "lft": 1, 
+         "in_navigation": false, 
+         "reverse_id": null, 
+         "login_required": false, 
+         "created_by": "stephen", 
+         "publication_end_date": null, 
+         "moderator_state": 0, 
+         "template": "cms/blog-post-two-column.html", 
+         "tree_id": 3, 
+         "placeholders": [
+            4, 
+            5
+         ], 
+         "changed_date": "2013-03-07T06:18:40.086Z", 
+         "limit_visibility_in_menu": null, 
+         "parent": null, 
+         "publisher_state": 1, 
+         "soft_root": false, 
+         "publication_date": "2013-03-07T06:18:40.083Z", 
+         "publisher_public": null, 
+         "level": 0, 
+         "changed_by": "stephen", 
+         "publisher_is_draft": true, 
+         "published": true
+      }
+   }, 
+   {
+      "pk": 4, 
+      "model": "cms.page", 
+      "fields": {
+         "rght": 2, 
+         "navigation_extenders": "", 
+         "site": 1, 
+         "creation_date": "2013-03-07T06:19:49.039Z", 
+         "lft": 1, 
+         "in_navigation": false, 
+         "reverse_id": null, 
+         "login_required": false, 
+         "created_by": "stephen", 
+         "publication_end_date": null, 
+         "moderator_state": 0, 
+         "template": "cms/blog-post-two-column.html", 
+         "tree_id": 4, 
+         "placeholders": [
+            6, 
+            7
+         ], 
+         "changed_date": "2013-03-07T06:20:27.510Z", 
+         "limit_visibility_in_menu": null, 
+         "parent": null, 
+         "publisher_state": 1, 
+         "soft_root": false, 
+         "publication_date": "2013-03-07T06:20:27.508Z", 
+         "publisher_public": null, 
+         "level": 0, 
+         "changed_by": "stephen", 
+         "publisher_is_draft": true, 
+         "published": true
+      }
+   }, 
+   {
+      "pk": 5, 
+      "model": "cms.page", 
+      "fields": {
+         "rght": 2, 
+         "navigation_extenders": "", 
+         "site": 1, 
+         "creation_date": "2013-03-07T06:21:44.127Z", 
+         "lft": 1, 
+         "in_navigation": false, 
+         "reverse_id": null, 
+         "login_required": false, 
+         "created_by": "stephen", 
+         "publication_end_date": null, 
+         "moderator_state": 0, 
+         "template": "cms/blog-post-two-column.html", 
+         "tree_id": 5, 
+         "placeholders": [
+            8, 
+            9
+         ], 
+         "changed_date": "2013-03-07T06:22:34.773Z", 
+         "limit_visibility_in_menu": null, 
+         "parent": null, 
+         "publisher_state": 1, 
+         "soft_root": false, 
+         "publication_date": "2013-03-07T06:22:34.770Z", 
+         "publisher_public": null, 
+         "level": 0, 
+         "changed_by": "stephen", 
+         "publisher_is_draft": true, 
+         "published": true
+      }
+   }, 
+   {
+      "pk": 6, 
+      "model": "cms.page", 
+      "fields": {
+         "rght": 2, 
+         "navigation_extenders": "", 
+         "site": 1, 
+         "creation_date": "2013-03-07T06:23:17.157Z", 
+         "lft": 1, 
+         "in_navigation": false, 
+         "reverse_id": null, 
+         "login_required": false, 
+         "created_by": "stephen", 
+         "publication_end_date": null, 
+         "moderator_state": 0, 
+         "template": "cms/blog-post-two-column.html", 
+         "tree_id": 6, 
+         "placeholders": [
+            10, 
+            11
+         ], 
+         "changed_date": "2013-03-07T09:22:20.180Z", 
+         "limit_visibility_in_menu": null, 
+         "parent": null, 
+         "publisher_state": 1, 
+         "soft_root": false, 
+         "publication_date": "2013-03-07T09:22:20.176Z", 
+         "publisher_public": null, 
+         "level": 0, 
+         "changed_by": "stephen", 
+         "publisher_is_draft": true, 
+         "published": true
+      }
+   }, 
+   {
+      "pk": 1, 
+      "model": "cms.title", 
+      "fields": {
+         "menu_title": "", 
+         "redirect": "", 
+         "meta_keywords": "", 
+         "page_title": "", 
+         "language": "en", 
+         "title": "Blog", 
+         "has_url_overwrite": true, 
+         "application_urls": "", 
+         "creation_date": "2013-02-28T01:32:05.335Z", 
+         "page": 1, 
+         "path": "blog", 
+         "meta_description": "", 
+         "slug": "blog"
+      }
+   }, 
+   {
+      "pk": 2, 
+      "model": "cms.title", 
+      "fields": {
+         "menu_title": "", 
+         "redirect": "", 
+         "meta_keywords": "", 
+         "page_title": "", 
+         "language": "en", 
+         "title": "Pinboard", 
+         "has_url_overwrite": false, 
+         "application_urls": "", 
+         "creation_date": "2013-02-28T01:32:46.435Z", 
+         "page": 2, 
+         "path": "pinboard", 
+         "meta_description": "", 
+         "slug": "pinboard"
+      }
+   }, 
+   {
+      "pk": 3, 
+      "model": "cms.title", 
+      "fields": {
+         "menu_title": "", 
+         "redirect": "", 
+         "meta_keywords": "", 
+         "page_title": "", 
+         "language": "en", 
+         "title": "FAQ", 
+         "has_url_overwrite": false, 
+         "application_urls": "", 
+         "creation_date": "2013-03-07T06:17:10.436Z", 
+         "page": 3, 
+         "path": "faq", 
+         "meta_description": "", 
+         "slug": "faq"
+      }
+   }, 
+   {
+      "pk": 4, 
+      "model": "cms.title", 
+      "fields": {
+         "menu_title": "", 
+         "redirect": "", 
+         "meta_keywords": "", 
+         "page_title": "", 
+         "language": "en", 
+         "title": "Mission", 
+         "has_url_overwrite": false, 
+         "application_urls": "", 
+         "creation_date": "2013-03-07T06:19:49.058Z", 
+         "page": 4, 
+         "path": "mission", 
+         "meta_description": "", 
+         "slug": "mission"
+      }
+   }, 
+   {
+      "pk": 5, 
+      "model": "cms.title", 
+      "fields": {
+         "menu_title": "", 
+         "redirect": "", 
+         "meta_keywords": "", 
+         "page_title": "", 
+         "language": "en", 
+         "title": "Terms", 
+         "has_url_overwrite": false, 
+         "application_urls": "", 
+         "creation_date": "2013-03-07T06:21:44.148Z", 
+         "page": 5, 
+         "path": "terms", 
+         "meta_description": "", 
+         "slug": "terms"
+      }
+   }, 
+   {
+      "pk": 6, 
+      "model": "cms.title", 
+      "fields": {
+         "menu_title": "", 
+         "redirect": "", 
+         "meta_keywords": "", 
+         "page_title": "", 
+         "language": "en", 
+         "title": "Privacy Policy", 
+         "has_url_overwrite": false, 
+         "application_urls": "", 
+         "creation_date": "2013-03-07T06:23:17.174Z", 
+         "page": 6, 
+         "path": "privacy", 
+         "meta_description": "", 
+         "slug": "privacy"
+      }
+   }, 
+   {
+      "pk": 1, 
+      "model": "text.text", 
+      "fields": {
+         "body": "<h2>What is TriplePulse?</h2>\n\n<p>TriplePulse is an LA based subscription-commerce platform dedicated to lowering the hurdles for endurance athletes to achieve their goals. #trainstrong. See <a href=\"/mission\">our mission</a>.</p>\n\n<h3>What are the benefits of becoming a member?</h3>\n<p>Every month you receive a FULL MONTH\u2019S WORK of endurance supplement support for your training; optimized by our <a href=\"/pinboard#team\">team of athletes</a>. Over 300% savings!</p>\n\n<h4>We did the research</h4>\n<p>We spent over 10,000 hours sort through the frauds, fakes, and all the misinformation to bring endurance athletes their essential sports nutrition.</p>\n\n<h4>Constantly Refining*</h4>\n<p>We are constantly optimizing our formula ratios, absorption methods, and delivery formats with our team of Olympians, pro cyclists, and Ironman triathletes.</p>\n\n<h4>Convenience</h4>\n<p>Just open your mailbox--skip the shopping trip</p>\n\n<h4>Burn the fat</h4>\n<p>We go direct to the manufacturers with custom specs for endurance athletes to get you bulk prices, without the bulk. The best alternatives at GNC costs at least 300% more!</p>\n\n<h4>Motivation &amp; Advice</h4>\n<p>Our team of pros deliver expert training tips, racing strategy, nutritional insight, motivational quotes and inspirational stories - everything you need to prepare your mind to overcome challenges during the race and beyond.</p>\n\n<h4>Try before you buy</h4>\n<p>Our free monthly \u201caid station\u201d has samples other endurance products. find out which ones you like and come stock up with us for the best value.</p>\n\n<h4>ZERO Risk Policy</h4>\n<p>We offer a risk-free trial on your first monthly pack because we\u2019re confident in the quality of our products. Problems? Text the CEO directly at 424-256-9133</p>\n\n<h4>Referral bonus</h4>\n<p>Get one month free for all friends you get to join. No limits.</p>\n\n<h3>I don\u2019t start training until later in the year, can I pick my start date?</h3>\n<p>Absolutely! Just pick your ideal date and we\u2019ll get your first pack there when you want. If you need the pack earlier, give us a call.</p>\n\n<h3>Do you take user suggestions about what should appear in upcoming boxes?</h3>\n\n<p>Yes, of course. We love feedback. Email <a href=\"mailto:info@triplepulse.com\">info@triplepulse.com</a> or text the CEO on 424-256-9133.  We plan to roll-out customization for each user, as we learn more about them.</p>\n\n<h3>What is in each monthly pack?</h3>\n\n<p>We give you full nutrient support for all your training days in the month (4 days per week) of all these goods:</p>\n<ul>\n\t<li>16 rippable packets of multivitamins (tablets)</li>\t<li>16 rippable packets of glutamine (powder)</li>\t<li>16 rippable packets of electrolyte salt crystals</li>\t<li>8 rippable packets of amino acid (capsules)</li>\t<li>8 amino acid transdermal adhesives (patches)</li>\t<li>1 two-ounce spray bottle (ideal format for electrolyte salt)</li></ul>\n\nWhat is the \u201caid station\u201d?\n\n<p>Just like an aid station comes through when you are tired late in a race, we will send you our \u201caid station\u201d late in the month, which is complete with samples of the latest supplements from major brands, designer exclusives, discounts on goods like heart rate monitors, and special deals that we hand-curate for our members.</p>\n\n\n\n<h2>Shipping</h2>\n\n<h3>When will I get my first box?</h3>\n<p>The first shipment in beta will arrive January 2, 2013. After that we ship our monthly boxes on the 1st and 15th of each month via USPS. Also be on the lookout for our free \u201caid station\u201d shipment late in the month.</p>\n\n<h3>Is shipping free? What\u2019s the policy.</h3>\n<p>Yes for the USA! Although shipping to Canada will incur a $5 shipping charge per month.</p>\n\n<h3>Where does TriplePulse ship to?</h3>\n<p>We currently ship everywhere in the United States and Canada!</p>\n\n<h3>Will I be able to track my shipment?</h3>\n<p>If you're in the US, each month we'll send you a tracking link in your email once we've shipped your pack.</p>\n\n<h3>What if I want to change my address?</h3>\n<p>Head on over to your account page to change your address and any other information that needs updating - by the 5th of each month. (Otherwise your TriplePulse will go to your old address.) If you have problems changing your address, feel free to email us with your name and the new address where you'd like your TriplePulse shipped.</p>\n\n<h3>Help! My pack never came. What do I do?</h3>\n<p>We are so sorry about that -- text the CEO at 424-256-9133 or just send an email to <a href=\"mailto:info@triplepulse.com\">support@TriplePulse.com</a> and we\u2019ll get everything sorted out for you.</p>\n\n<h2>Billing</h2>\n<h3>Why do you guys charge the total cost of the subscription up front?</h3>\n<p>Good question! The reason that we can offer such good prices on our longer subscriptions is because we charge up front. That way you can apply the savings to race registration or much needed equipment.</p>\n\n<h3>When will I be billed?</h3>\n<p>When you place your order for the monthly membership, you will be billed for your first TriplePulse pack immediately. For orders placed between the 1st and 15th, you will be billed on the first day of each month after your first shipment. For orders placed between the 16th and 31st, you will be billed on the 15th of each following month.</p>\n\n<h3>Can I gift a TriplePulse subscription?</h3>\n<p>Of course you can! You can gift to anyone you\u2019d like! All we need is your payment information, their email address to get started. Once we have all those details, we\u2019ll shoot your recipient an email letting them know what a great friend you are and prompt them to sign up using their unique gift code.</p>\n\n<h3>Are there any hidden fees?</h3>\n\n<p>No, it's only your monthly subscription fee. Although if you\u2019re from Canada, there is an extra $5/month shipping fee to get those packs delivered in The Great White North.</p>\n\n<h2>More Questions</h2>\n\n<h3>Are the supplements in my TriplePulse pack safe to use?</h3>\n<p>We source our products from well-established manufacturers. However, much of the label information has not been evaluated by the Food and Drug Administration. It is always best to consult your doctor before taking any supplements or minerals.</p>\n\n<h3>Do you have a referral program?</h3>\n<p>Yes we do! To find your customized TriplePulse referral link, login to your account and click on the \u201cInvite\u201d tab. Copy the link in the box on the right side of the page and share away! For every new subscriber that you refer to TriplePulse, you\u2019ll receive one extra month of TriplePulse for free. Nifty, eh?</p>\n\n<h3>I want to talk to a person there, can I call you?</h3>\n\n<p>Yes! Text our CEO at 424-256-9133 or email us at <a href=\"mailto:info@triplepulse.com\">info@triplepulse.com</a>. We're available Monday through Friday from 9 am to 6 pm PST.</p>\n\n<h3>Will you tell me what is coming in my \u201caid station\u201d ahead of time? Can I choose?</h3>\n\n<p>No, this part is designed as a surprise--its meant to be just like that aid station late in a race that gets you through to the finish line. We plan to customize what you receive the more we learn about your goals, races, etc.</p>\n\n<h3>What's your cancellation policy?</h3>\n\n<p>You can cancel your subscription via the account page at any time. You will still receive the packs you have already paid for but your subscription will not be renewed the next time billing is set to occur. If you subscribed to one of our discounted multi-month packages and cancel before the duration of your subscription, you will be refunded for the packs you have yet to receive, less the discount that was applied.</p>\n\n<h3>What payment options do I have?</h3>\n\n<p>We accept most major credit cards or through paypal. </p>\n\n<h3>Can I return my TriplePule pack?</h3>\n\n<p>Unfortunately, no. If you received your pack, we\u2019re legally not able to accept returns due to liability reasons.  But try to ask a friend or post it to craigslist. Don\u2019t let the goods go to waste!</p>\n\n<h3>Can I \u201cskip\u201d a month?</h3>\n<p>You can cancel and then sign back up, but our products work best with continual usage.</p>\n\n<h3>Can I buy multiple boxes for a single month?</h3>\n<p>Sure thing! But if you\u2019re buying it for a friend or family member you\u2019ll want to take advantage of our referral program.</p>\n\n<h3>How do I unsubscribe from occasional newsletters?</h3>\n<p>To unsubscribe from daily sales emails, please click <a href=\"/unsubscribe\">here</a> and enter your email address in the box before clicking the unsubscribe button. Unsubscribing will not deactivate your account it will just remove you from our mailing list and you can contact us if you wish to re-subscribe.</p>\n\n<h3>Why is my question not in the FAQ?</h3>\n<p>Oops! Text the CEO at 424-256-9133 or email at info@triplepulse.com</p>\n\t"
+      }
+   }, 
+   {
+      "pk": 2, 
+      "model": "text.text", 
+      "fields": {
+         "body": "<p>We started TriplePulse out of Westwood, California, with the goal of helping amateur and intermediate endurance athletes reach their full potential.  We\u2019ve sifted through the noise of the endurance nutrition market to deliver the essential vitamins and supplements conveniently to the door of our customers on a monthly basis.  Our mission is to support endurance athletes, both physically and mentally, and help overcome their challenges during the race and beyond.  In addition to our products, we will curate web content with expert training insight and inspiration from sophisticated athletes. We believe this mix is the recipe for perseverance and universal success.</p>"
+      }
+   }, 
+   {
+      "pk": 3, 
+      "model": "text.text", 
+      "fields": {
+         "body": "<h3>Disclaimer:</h3>\n\n<p>This site is for educational and entertainment purposes. It is not a substitute for medical advice, diagnosis, or treatment. You should consult your physician or other health care professional before using any vitamins or supplements or any other fitness program to determine if it is right for your body. In particular if you or your family has a history of high blood pressure and/or heart disease, or if you have ever experienced chest pain, smoke, have high cholesterol, are obese, or have a bone or joint problem that could be made worse by a change in diet and/or physical activity. Do not start use vitamins or supplements or a fitness program if your physician or health care provider advises against it. If you experience faintness, dizziness, pain or shortness of breath at any time while exercising you should stop immediately.\nThis site offers health, nutrition and fitness information and is designed for educational purposes only. You should not rely on this information as a substitute for, nor does it replace, professional medical advice, diagnosis, or treatment. If you have any concerns or questions about your health, you should always consult with a physician or other health-care professional. Do not disregard, avoid or delay obtaining medical or health related advice from your health-care professional because of something you may have read on this site. The use of any information provided on this site is solely at your own risk.</p>\n<p>Developments in medical research may impact the health, fitness and nutritional advice that appears here. No assurance can be given that the advice contained in this site will always include the most recent findings or developments with respect to the particular material.</p>\n<p>If you are in the United States and are having a medical or health emergency, call your health care professional, or dial 911.</p>\n<p>You should always talk to a qualified personal healthcare provider before making any dietary changes. Be smart. We care about you at TriplePulse!</p>\n\t \t\n\t\n<h3>Terms and Conditions</h3>\n\n<p>Welcome to the TriplePulse website (the \u201cSite\u201d). By accessing, browsing or using this Site, you acknowledge that you have read, understood and agreed to be bound by these Terms of Use (these \u201cTerms\u201d). If you do not agree to these Terms, you should not use or access this Site. TriplePulse reserves the right to revise these Terms at any time by updating this posting. You are encouraged to review these Terms each time you use the Site because your use of the Site after the posting of changes will constitute your acceptance of the changes. We grant you a personal, limited, non-transferable non-exclusive, license to access and use the Site. We reserve the right, in our sole discretion and without notice to you, to revise the products and services available on the Site and to change, suspend or discontinue any aspect of the Site and we will not be liable to you or to any third party for doing so. We may also impose rules for and limits on use of the Site or restrict your access to part, or all, of the Site without notice or penalty. Your continued use of the Site will constitute your acceptance of any such changes.</p>\n\n<h4>1. USE OF THE SITE</h4>\n<p>You may use the Site only for your own noncommercial personal use and in compliance with these Terms. You are responsible for your own communications, including the transmission, uploading or posting of information and are responsible for the consequences of such communications to the Site.\nWe require all Members to agree not to use the Site, and specifically prohibit any use of the Site, for any of the following purposes:</p>\n<p>Posting, communicating or transmitting any material that infringes on any intellectual property, publicity or privacy right of another person or entity</p>\n<p>Posting any information which is untrue, inaccurate or not your own\nEngaging in conduct that would constitute a criminal offense or give rise to civil liability or otherwise violate any law or regulation</p>\n<p>Attempting to interfere in any way with the Site\u2019s or TriplePulse\u2019s network security, or attempting to use the Site\u2019s service to gain unauthorized access to any other computer system</p>\n<p>You are responsible for maintaining the confidentiality of your account and password. You agree to accept responsibility for all activities that occur under your account or password. You agree to immediately notify us in the event of any unauthorized use of your account or other breach of security.</p>\n\n<h4>2. ADDITIONAL TERMS AND CONDITIONS</h4>\n<p>You agree that additional terms and conditions may apply to specific products, orders or your use of certain portions of the Site, including with respect to ordering, shipping and return policies and membership reward programs (\u201cAdditional Terms\u201d), which Additional Terms are made part of these Terms by reference. If there is a conflict between these Terms and the Additional Terms, the Additional Terms shall control.</p>\n\n<h4>3. MEMBERSHIP</h4>\n<p>The Site is available to registered users who are 18 years and older and who have not been suspended or removed by TriplePulse for any reason (a \u201cMember\u201d). We reserve the right to revoke your membership for any reason at any time including as a result of a violation of these Terms of the Privacy Policy, without notice.  Membership is void where prohibited by law.</p>\n\n<h4>4. PRODUCT INFORMATION; LIMITATION ON QUANTITIES</h4>\n<p>Excluding any content which may be submitted by Members from time to time, we strive to ensure that the information on the Site is complete and reliable. Certain information may contain pricing errors, typographical errors and other errors or inaccuracies which we may correct without liability. We also reserve the right to limit quantities purchased by Members and to revise, suspend, or terminate an event or promotion at any time without notice (including after an order has been submitted and/or acknowledged). We do not guarantee that all products described on our Site will be available.</p>\n\n<h4>5. PROPRIETARY RIGHTS</h4>\n<p>You acknowledge and agree that the content (other than content that may be submitted by Members), materials, text, images, videos, graphics, trademarks, logos, button icons, music, software and other elements available on the Site are the property of TriplePulse or our licensors and are protected by copyright, trademark and/or other proprietary rights and laws. You agree not to sell, license, rent, distribute, copy, reproduce, transmit, publicly display, publicly perform, publish, adapt, edit, modify or create derivative works from any content or materials on the Site. TriplePulse is a registered trademark and the TriplePulse logo is a trademark of TriplePulse, Inc. All other trademarks that appear at our site are the property of their respective owners.</p>\n\n<h4>6. SUBMITTED CONTENT</h4>\n<p>TriplePulse does not claim ownership of any materials you make available through the Site. With respect to any materials you submit or make available for inclusion on the Site, you grant TriplePulse a perpetual, irrevocable, non-terminable, worldwide, royalty-free and non-exclusive license to use, copy, distribute, publicly display, modify, create derivative works, and sublicense such materials or any part of such materials. You hereby represent, warrant and covenant that any materials you provide do not include anything (including, but not limited to, text, images, music or video) to which you do not have the full right to grant TriplePulse the license specified above. You further represent, warrant and covenant that any materials you provide will not contain libelous or otherwise unlawful, abusive or obscene material. TriplePulse will be entitled to use any content submitted by you without incurring obligations of confidentiality, attribution or compensation to you.</p>\n\n<h4>7. DISCLAIMERS</h4>\n<p>You assume all responsibility and risk with respect to your use of the Site. THE SITE, AND ALL CONTENT, MERCHANDISE, AND OTHER INFORMATION ON OR ACCESSIBLE FROM OR THROUGH THIS SITE OR A \u201cLINKED\u201d SITE ARE PROVIDED ON AN \u201cAS IS\u201d AND \u201cAS AVAILABLE\u201d BASIS WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, NON-INFRINGEMENT, SECURITY OR ACCURACY. SPECIFICALLY, BUT WITHOUT LIMITATION, TRIPLEPULSE DOES NOT WARRANT THAT: (1) THE INFORMATION ON THIS SITE IS CORRECT, ACCURATE OR RELIABLE; (2) THE FUNCTIONS CONTAINED ON THIS SITE WILL BE UNINTERRUPTED OR ERROR-FREE; OR (3) DEFECTS WILL BE CORRECTED, OR THAT THIS SITE OR THE SERVER THAT MAKES IT AVAILABLE IS FREE OF VIRUSES OR OTHER HARMFUL COMPONENTS.\nTriplePulse makes no warranties of any kind regarding any non-TriplePulse sites to which you may be directed or hyperlinked from this Site. Hyperlinks are included solely for your convenience, and TriplePulse makes no representations or warranties with regard to the accuracy, availability, suitability or safety of information provided in such non-TriplePulse sites. TriplePulse does not endorse, warrant or guarantee any products or services offered or provided by or on behalf of third parties on the Site.</p>\n\n<h4>8. INDEMNIFICATION</h4>\n<p>You agree to indemnify, hold harmless, and defend TriplePulse, its parent, subsidiaries, divisions, and affiliates, and their respective officers, directors, employees, agents and affiliates from any and all claims, liabilities, damages, costs and expenses of defense, including attorneys\u2019 fees, in any way arising from or related to your use of the Site, your violation of these Terms or the Privacy Policy, content posted to the Site by you, or your violation of any law or the rights of a third party.</p>\n\n<h4>9. LIMITATION OF LIABILITY</h4>\n<p>IN NO EVENT SHALL TRIPLEPULSE, ITS AFFLIATES OR ANY OF THEIR RESPECTIVE OFFICERS, DIRECTORS, EMPLOYEES, AGENTS, SUCCESSORS, SUBSIDIARIES, SUPPLIERS, AFFILIATES, OR THIRD PARTIES PROVIDING INFORMATION ON THIS SITE BE LIABLE TO ANY USER OF THE SITE OR ANY OTHER PERSON OR ENTITY FOR ANY DIRECT, INDIRECT, SPECIAL, INCIDENTAL, PUNITIVE, CONSEQUENTIAL OR EXEMPLARY DAMAGES (INCLUDING, BUT NOT LIMITED TO, DAMAGES FOR LOSS OF PROFITS, LOSS OF DATA, OR LOSS OF USE) ARISING OUT OF THE USE OR INABILITY TO USE THE SITE, WHETHER BASED UPON WARRANTY, CONTRACT, TORT, OR OTHERWISE, EVEN IF TRIPLEPULSE HAS BEEN ADVISED OF OR SHOULD HAVE KNOWN OF THE POSSIBILITY OF SUCH DAMAGES OR LOSSES. IN NO EVENT SHALL THE TOTAL LIABILITY OF TRIPLEPULSE, ITS AFFILIATES OR ANY OF THEIR RESPECTIVE OFFICERS, DIRECTORS, EMPLOYEES, AGENTS, SUCCESSORS, SUBSIDIARIES, SUPPLIERS, AFFILIATES OR THIRD PARTIES PROVIDING INFORMATION ON THIS SITE TO YOU FOR ALL DAMAGES, LOSSES, AND CAUSES OF ACTION RESULTING FROM YOUR USE OF THIS SITE, WHETHER IN CONTRACT, TORT (INCLUDING, BUT NOT LIMITED TO, NEGLIGENCE) OR OTHERWISE, EXCEED THE AMOUNT YOU PAID TO TRIPLEPULSE IN CONNECTION WITH THE EVENT GIVING RISE TO SUCH LIABILITY.</p>\n\n<p>You hereby acknowledge that the preceding paragraph shall apply to all content, merchandise and services available through the Site. Because some states do not allow limitations on implied warranties or the exclusion or limitation of certain damages, all of the above disclaimers or exclusions may not apply to all users.</p>\n\n<h4>10. INTERNATIONAL USE</h4>\n<p>We control and operate the Site from the United States. We make no representation that materials on the Site are appropriate or available for use outside the United States. If you choose to access this Site from outside the United States, you do so at your own initiative and are responsible for compliance with local laws, if and to the extent local laws are applicable.</p>\n\n<h4>11. RISK OF LOSS</h4>\n<p>Any merchandise purchased from our Site will be shipped by a third party carrier. As a result, title and risk of loss for such merchandise will pass to you upon our delivery to the carrier.</p>\n\n<h4>12. COPYRIGHT INFRINGEMENT; NOTICE AND TAKE DOWN PROCEDURES</h4>\n<p>TriplePulse specifically prohibits the posting of any content that violates or infringes the copyright rights and/or other intellectual property rights (including rights of privacy and publicity) of any person or entity. If you believe that any material contained on this Site infringes your copyright or other intellectual property rights, you should notify us of your copyright infringement claim in accordance with the following procedure. TriplePulse will process notices of alleged infringement which it receives and will take appropriate action as required by the Digital Millennium Copyright Act (\u201cDMCA\u201d). The DMCA requires that notifications of claimed copyright infringement should be sent to the following address:</p>\n\n<p>TriplePulse, Inc.</p>\n<p>10960 Wilshire Boulevard, Suite 1050</p>\n<p>Los Angeles, CA 90024</p>\n\n<p>To be effective, the notification must be in writing and contain the following information (DMCA, 17 U.S.C. \u00a7512(c)(3)):\nPhysical or electronic signature of a person authorized to act on behalf of the owner of an exclusive right that is allegedly infringed;</p>\n<p>Identification of the copyrighted work claimed to have been infringed, or, if multiple copyrighted works at a single online site are covered by a single notification, a representative list of such works at that site;\nIdentification of the material that is claimed to be infringing or to be the subject of infringing activity and that is to be removed or access to which is to be disabled, and information reasonably sufficient to permit the service provider to locate the material;</p>\n<p>Information reasonably sufficient to permit the service provider to contact the complaining party, such as an address, telephone number, and, if available, an electronic mail address at which the complaining party may be contacted;\nA statement that the complaining party has a good faith belief that use of the material in the manner complained of is not authorized by the copyright owner, its agent, or the law; and</p>\n<p>A statement that the information in the notification is accurate, and under penalty of perjury, that the complaining party is authorized to act on behalf of the owner of an exclusive right that is allegedly infringed.\nTo contact us with any questions or concerns in connection with these Terms or the Site, or to provide any notice under these Terms, please email us at info@triplepulse.com.</p>\n\t"
+      }
+   }, 
+   {
+      "pk": 4, 
+      "model": "text.text", 
+      "fields": {
+         "body": "<p>We are committed to respecting and protecting your privacy.  This section communicates how, when, and why we gather information about our customers and what we do with it. If you have any questions about the TriplePulse privacy policies please contact us at:</p>\n\n<p>TriplePulse, Inc.<br>\n10960 Wilshire Boulevard, Suite 1050<br>\nLos Angeles, CA 90024<br>\n<a href=\"mailto:info@triplepulse.com\">info@triplepulse.com</a></p>\n\n<p>This Privacy Policy does not apply to other websites to which we link. You agree that your use of the Site signifies your assent to this Privacy Policy. If you do not agree with this Privacy Policy, you are not authorized to use this Site.</p>\n\n<h3>INFORMATION COLLECTED</h3>\n<p>If you subscribe to TriplePulse and/or place an order through TriplePulse.com, we will ask you for your name, e-mail address, shipping address, telephone number and credit card information. We use this information to process and fulfill your order and to notify you of your order status. All archived credit card information is maintained in a secure and safe environment. Telephone numbers and e-mail addresses are used to contact you regarding your order. TriplePulse will never sell, rent or share your personal information, including your e-mail address, with any third parties for marketing purposes without your express permission. If you decide to save your order information you will be creating an account that includes a personal password. Please safeguard your password and other personal information. You may be liable for unauthorized use of our web site, as well as have your private information used by others. In addition, we automatically gather certain information about the use of the Site, such as how frequently certain areas of the Site are visited, including through the use of cookies, web beacons and other technologies. Most browsers can be set to prevent cookies or to notify you when one is being placed. However, cookies are necessary to access the Site.</p>\n\n<h3>HOW WE USE YOUR INFORMATION</h3>\n<p>As mentioned previously, we take this privacy and security business seriously. We hired Arnold to watch our offices at all times so you can rest assured we will not share or disclose your information to anyone except as described in this Privacy Policy. We use personally identifiable information in order to give you a more enjoyable convenient shopping experience and to help us identify and/or provide information, products or services that may be of interest to you. We use your personally identifiable information to support and enhance your use of the Site and its features, including without limitation: fulfilling your order; providing customer service; tracking email invitations you send; and otherwise supporting your use of the Site. We may also track your past purchases to provide you with a personalized profile of your shopping history. In addition, we may notify you about new services or special promotional programs, or send you offers or information.</p>\n\n<p>In connection with their performance of services to maintain and operate the Site and certain features on the Site, certain trusted third parties may be permitted to access your information. For example, we may use third parties to host the Site; operate various features available on the Site; send emails; analyze data; provide search results and links and assist in fulfilling your orders.</p>\n\n<p>We may transfer personally identifiable information as an asset in connection with a proposed or actual merger or sale (including any transfers made as part of an insolvency or bankruptcy proceeding) involving all or part of our business or as part of a corporate reorganization, stock sale or other change in control. In such a circumstance the Transferee would be bound by the terms of this privacy policy.</p>\n\n<p>We reserve the right to disclose information in order to comply with a subpoena, court order, administrative or governmental order, or any other requirement of law, or when we, in our sole discretion, believe it is necessary in order to protect our rights or the rights of others, to prevent harm to persons or property, to fight fraud and credit risk reduction.</p>\n\n<p>We use non-personally identifiable information in the aggregate, so that we can improve the Site and for business and administrative purposes. We may also use or share with third parties for any purpose aggregated data that contains no personally identifiable information.</p>\n\n<p>If you submit your email address to be added to a mailing list, we will use the email address for the sole purpose of sending you announcements, special offers from TriplePulse and other partners along with site updates. Each email we send will contain information on how to unsubscribe from our mailing list. You can also unsubscribe by sending an email to <a href=\"mailto:info@triplepulse.com\">info@triplepulse.com</a>.</p>\n\n<p>We use your feedback to improve our site and our organization. If you choose to provide information about yourself using a feedback or email form on our Web site, we will not use the information for any purpose other than to respond to your inquiry or to act on your suggestion or comment. We will not share your information with others except with your permission or upon your request.</p>\n\n<p>Comments you voluntarily post on public forums such as our blog will, of course, be displayed publicly along with your assigned username you submit and the time at which you submitted the comment.</p>\n\n<h3>HOW WE PROTECT YOUR INFORMATION</h3>\n<p>We are committed to protecting the information we receive from you. We follow reasonable technical and management practices to help protect the confidentiality, security and integrity of data stored on our system. While no computer system is completely secure, we believe the measures we have implemented reduce the likelihood of security problems to a level appropriate to the type of data involved.</p>\n\n<p>The Site encrypts your credit card number and other personal information using secure socket layer (SSL) technology to provide for the secure transmission of the information from your PC to our servers. In addition, only those employees and third parties who need access to you information in order to perform their duties are allowed such access.</p>\n\n<p>Accessing and Updating Your Personal Information and Preferences If you are a registered user, you may access and update your registration information and your preferences to receive email or other communications from us by sending an email to info@triplepulse.com.</p>\n\n<p>You may also update or change your personal information or preferences by sending email to info@triplepulse.com. We will take commercially reasonable steps to implement your opt-out requests promptly, but you may still receive communications from us for up to fourteen business days as we process your request.</p>\n\n<p>While we make efforts to accommodate requests to restrict our use of your information, we reserve the right to delete all or any portion of customer information if we are not able to reasonably accommodate a requested restriction.</p>\n\n<h3>CHILDREN\u2019S PRIVACY AND PARENTAL CONTROLS</h3>\n<p>We do not solicit any personal information from children. If you are not 18 or older, you are not authorized to use the Site. Parents should be aware that there are parental control tools available online that you can use to prevent your children from submitting information online without parental permission or from accessing material that is harmful to minors.</p>\n\n<h3>PRIVACY POLICY CHANGES</h3>\n<p>If we decide to change our Privacy Policy for the Site, we will post the revised Privacy Policy here so that you will always know what information we gather, how we might use that information and whether we may disclose it to anyone. Your continued use of the Site indicates your assent to the Privacy Policy as posted.</p>\n"
+      }
+   }, 
+   {
+      "pk": 1, 
+      "model": "auth.user", 
+      "fields": {
+         "username": "stephen", 
+         "first_name": "Stephen Hebson", 
+         "last_name": "", 
+         "is_active": true, 
+         "is_superuser": true, 
+         "is_staff": true, 
+         "last_login": "2013-03-07T00:26:04.075Z", 
+         "groups": [], 
+         "user_permissions": [], 
+         "password": "pbkdf2_sha256$10000$URRi5i4JhDzS$zcnRS6t0lzx0hS8hZDqs3rkiHhSBvzLhb+nHDbkIwQE=", 
+         "email": "shebson@gmail.com", 
+         "date_joined": "2013-02-27T11:02:24.110Z"
+      }
+   }
+]

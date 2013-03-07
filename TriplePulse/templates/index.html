@@ -1,0 +1,138 @@
+{% extends "skeleton/_base.html" %}
+
+{% block title %}
+    TriplePulse: Endurance Sports Nutrition From the Pros
+{% endblock %}
+
+{% block extra_css %}
+
+	<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/index.css" />
+	
+{%endblock%}
+
+{% block extra_js %}
+
+{%endblock%}
+
+{% block content %}
+<div class="marquee section">
+	<div class="container">
+		<h1>Endurance Sports Nutrition<br />From the Pros.</h1>
+		<h2>Full stacks. Replenished Monthly.</h2>
+		<p><a href="/signup" class="btn btn-primary btn-large">Let's Get Started</a></p>
+	</div>
+</div>
+<div class="howItWorks section">
+	<div class="container">
+		<h2>How it Works</h2>
+		<div class="row">
+			<div class="span4">
+				<a href='/stacks'>
+					<h4>1. Tell us what you're training for</h4>
+					<div class="image step1"></div>
+				</a>
+			</div>
+			<div class="span4">
+				<a href='/stacks'>
+					<h4>2. Tell us your level</h4>
+					<div class="image step2"></div>
+				</a>
+			</div>
+			<div class="span">
+				<a href='/stacks'>
+					<h4>3. Get your full stack</h4>
+					<div class="image step3"></div>
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="whatsInYourPack section">
+	<div class="container">
+		<h2>What's in your pack? <span class="monthsSupply">A full month's supply of:</span></h2>
+		<div class="row">
+			<div class="span4"><a href="/pinboard#science" class="header">Pre</a></div>
+			<div class="span4"><a href="/pinboard#science" class="header">During</a></div>
+			<div class="span4"><a href="/pinboard#science" class="header">Post</a></div>
+		</div>
+		<div class="row">
+			<div class="span4">
+				<a href="/pinboard#science">
+					<div class="image pills"></div>
+					<p>Elevated Multivitamins</p>
+				</a>
+			</div>
+			<div class="span4">
+				<a href="/pinboard#science">
+					<div class="image electrolytes"></div>
+					<p>Electrolyte Crystals</p>
+				</a>
+			</div>
+			<div class="span4">
+				<a href="/pinboard#science">
+					<div class="image glutamine"></div>
+					<p>Glutamine Recovery Complex</p>
+				</a>				
+			</div>
+		</div>
+		<div class="row">
+			<div class="span4">
+				<a href="/pinboard#science">
+					<div class="image aminoAcids"></div>
+					<p>Amino Acid Complex</p>
+				</a>
+			</div>
+			<div class="span4">
+				<a href="/pinboard#science">
+					<div class="image hourGlass"></div>
+					<p>Time Release Amino Patch</p>
+				</a>
+			</div>
+			<div class="span4">
+				<a href="/pinboard#science">
+					<div class="image freeSamples"></div>
+					<p>Free Samples</p>
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="partners section container">
+	<h2>
+		Our Partners
+		<span class="image">
+			USA Cycling, American College of Sports Medicine, FIFA, USA Swimming, John Hopkins Medicine, Olympics, IMG Academies
+		</span>
+	</h2>
+</div>
+<div class="roster section">
+	<div class="container">
+		<h2>TriplePulse <span class="orange">Roster</span></h2>
+		<div class="row">
+			<div class="span4">
+				<a href="/pinboard#athletes">
+					<div class="image tile1">
+					</div>
+				</a>
+			</div>
+			<div class="span4 quote">
+				<a href="/pinboard#athletes">
+					<p>"I teamed with <span class="orange">Triple Pulse</span> to put everything that works for me in one pack."</p>
+				</a>
+				<p class="dash">&mdash;</p>
+				<a href="/pinboard#athletes">
+					<p class="name orange">Glen Ochal</p>
+					<p class="title">Olympic Medalist, Rowing</p>
+				</a>	
+			</div>
+			<div class="span4">
+				<a href="/pinboard#athletes">
+					<div class="image tile3">
+					</div>
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+{%endblock%}

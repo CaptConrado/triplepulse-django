@@ -1,0 +1,255 @@
+{% extends "skeleton/_base.html" %}
+
+{% block title %}
+    TriplePulse: Sign up for your monthly supplement stack
+{% endblock %}
+
+{% block extra_css %}
+
+<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/signup.css" />
+	
+{% endblock %}
+
+{% block extra_js %}
+<script type="text/javascript" src="https://js.stripe.com/v1/"></script>
+<script type="text/javascript" src="{{ STATIC_URL }}js/jquery.h5validate.js"></script>
+<script type="text/javascript" src="{{ STATIC_URL }}js/signup.js"></script>
+
+{% endblock %}
+
+{% block content %}
+<input type="hidden" id="stripe_publishable" value="{{ stripe_publishable }}" />
+<div class="container">
+	<h1>Stack your pack</h1>
+	<div class="breadcrumbs">
+		<div class="type active">
+			<div class="checkmark hide"></div>
+			<div class="text">Type</div>
+		</div>
+		<div class="level">
+			<div class="checkmark hide"></div>
+			<div class="text">Level</div>
+		</div>
+		<div class="plans">
+			<div class="checkmark hide"></div>
+			<div class="text">Monthly Plan</div>
+		</div>
+		<div class="billing">
+			<div class="checkmark hide"></div>
+			<div class="text">Billing</div>
+		</div>
+		<div class="account">
+			<div class="checkmark hide"></div>
+			<div class="text">Account Info</div>
+		</div>
+	</div>
+	
+	<div class="game">
+		<h3>What are you training for?</h3>
+		<div class="type slide row">
+			<div class="span6">
+				<a class="option race" href="#">
+					Race Prep
+					<p>Traithlons, Running, etc.</p>
+				</a>
+			</div>
+			<div class="span6">
+				<a class="option cardio" href="#">
+					Cardio Sport
+					<p>Everyday endurance training</p>
+				</a>
+			</div>
+		</div>
+		<div class="level race slide row hide">
+			<div class="span4">
+				<a class="option" href="#">
+					Never done one
+				</a>
+			</div>
+			<div class="span4">
+				<a class="option" href="#">
+					Not my first rodeo
+				</a>
+			</div>
+			<div class="span4">
+				<a class="option" href="#">
+					I know what I'm doing
+				</a>
+			</div>
+		</div>
+		<div class="level cardio slide row hide">
+			<div class="span4">
+				<a class="option" href="#">
+					Twice a week
+				</a>
+			</div>
+			<div class="span4">
+				<a class="option" href="#">
+					Four times a week
+				</a>
+			</div>
+			<div class="span4">
+				<a class="option" href="#">
+					Always on
+				</a>
+			</div>
+		</div>
+		<div class="plans slide row hide">
+			<div class="span3">
+				<a class="option" href="#">
+					<p class="price"><span class="dollar">$</span>69</p>
+					<p class="term">Monthly</p>
+					<p class="shipping">Free Shipping</p>
+					<input type="hidden" class="planID" value="monthly">
+					<input type="hidden" class="planName" value="Monthly">					
+					<input type="hidden" class="planCost" value="$69">					
+										
+				</a>
+			</div>
+			<div class="span3">
+				<a class="option" href="#">
+					<p class="price"><span class="dollar">$</span>57</p>
+					<p class="term">3 months</p>
+					<p class="savings">Save over 18%</p>
+					<p class="shipping">Free Shipping</p>
+					<input type="hidden" class="planID" value="3months">
+					<input type="hidden" class="planName" value="3 months">					
+					<input type="hidden" class="planCost" value="$171">					
+					
+				</a>
+			</div>
+			<div class="span3">
+				<a class="option" href="#">
+					<p class="price"><span class="dollar">$</span>45</p>
+					<p class="term">6 months</p>
+					<p class="savings">Save over 35%</p>
+					<p class="shipping">Free Shipping</p>
+					<input type="hidden" class="planID" value="6months">
+					<input type="hidden" class="planName" value="6 months">					
+					<input type="hidden" class="planCost" value="$270">					
+					
+				</a>
+			</div>
+			<div class="span3">
+				<a class="option" href="#">
+					<p class="price"><span class="dollar">$</span>34</p>
+					<p class="term">12 months</p>
+					<p class="savings">Save over 50%</p>
+					<p class="shipping">Free Shipping</p>
+					<div class="label">BEST VALUE</div>
+					<input type="hidden" class="planID" value="annual">
+					<input type="hidden" class="planName" value="12 months">					
+					<input type="hidden" class="planCost" value="$408">					
+					
+				</a>
+			</div>
+			<p class="finePrint">Plans automatically renew. You may cancel at anytime.</p>
+		</div>
+        <form id="accountForm" method="post">
+            <div class="billing slide hide">
+                <div class="row paymentErrors"></div>
+                <div class="row paymentColumns">
+                    <div class="span6">
+
+                        <div class="paymentContent">
+                            <h3>Credit Card Info</h3>
+                            <label for="email">Email Address</label>
+                            <input type="text" id="email" name="email" required />
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required />
+                            <label for="card">Credit Card Number</label>
+                            <input type="text" id="card" />
+                            <label for="cvc">CVC</label>
+                            <input type="text" class="input-small" id="cvc" pattern=".{3,}" />
+                            <label for="expMonth">Expires</label>
+                            <input type="text" id="expMonth" class="input-mini" placeholder="MM" pattern="([1-9]|0[1-9]|1[012])" /> / <input type="text" class="input-mini" id="expYear" pattern=".{4,4}" placeholder="YYYY" />
+                        </div>
+                    </div>
+                    <div class="span6 billingInfo">
+                        <div class="paymentContent">
+
+                        <h3>Billing Address</h3>
+                            <label for="billingLine1">Street Address Line 1</label>
+                            <input type="text" id="billingLine1"  />
+                            <label for="billingLine2">Street Address Line 2</label>
+                            <input type="text" id="billingLine2" />
+                            <label for="billingCity" >City</label>
+                            <input type="text" id="billingCity"  />
+                            <label for="billingState" >State</label>
+                            <input type="text" class="input-mini" id="billingState" pattern=".{2,}" />
+                            <label for="billingZIP" >ZIP Code</label>
+                            <input type="text" class="input-small" id="billingZIP" pattern=".{5,}" />
+                        </div>
+                    </div>
+                </div>
+                <div class="row selectedPlan">
+                    <h4>Your Subscription</h4>
+                    <div class="span6">
+                        <h2 class="yourSubscription orange"></h2>
+                        <label for="coupon" >Coupon Code</label>
+                        <input id="coupon" type="text" name="coupon" />
+                    </div>
+                    <div class="span6">
+                        <div class="price"></div>
+                        <div class="shipping">Shipping: Free</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="span6">
+                        <a href="#" class="back">&laquo; Back</a>
+                    </div>
+                    <div class="span6">
+                        <a href="#" class="btn btn-primary proceed">Place Order &raquo;</a>
+                    </div>
+                </div>
+            </div>
+            <div class="account slide hide">
+                <h4>Your Subscription</h4>
+                <div class="row selectedPlan">
+                    <div class="span6">
+                        <h2 class="orange yourSubscription"></h2>
+                    </div>
+                    <div class="span6">
+                        <div class="price"></div>
+                        <div class="shipping">Shipping: Free</div>
+                    </div>
+                </div>
+                <h2>Thanks! Now add your billing address to receive your stack.</h2>
+                <div class="row accountErrors"></div>
+                <div class="row paymentColumns">
+
+                    <div class="span6 shippingInfo">
+                        <div class="paymentContent">
+                            <h3>Shipping Info</h3>
+                            <label for="shippingLine1" >Street Address Line 1</label>
+                            <input type="text" id="shippingLine1" name="street1" required />
+                            <label for="shippingLine2">Street Address Line 2</label>
+                            <input type="text" id="shippingLine2" name="street2" />
+                            <label for="shippingCity">City</label>
+                            <input type="text" id="shippingCity"  name="city"  required />
+                            <label for="shippingState">State</label>
+                            <input type="text" class="input-mini" id="shippingState" name="state" pattern=".{2,}" required />
+                            <label for="shippingZIP">ZIP Code:</label>
+                            <input type="text" class="input-small" id="shippingZIP" name="zip" pattern=".{5,}" required />
+                        </div>
+                    </div>
+                    <div class="span6 accountInfo">
+                        <div class="paymentContent">
+
+                            <h3>Account Info</h3>
+                            <label for="newUsername" >Username</label>
+                            <input type="text" id="newUsername" name="username" required />
+                            <label for="newPassword" >Password</label>
+                            <input type="password" id="newPassword" name="password" pattern=".{6,}" required />
+                        </div>
+                    </div>
+                </div>
+                <div class="row submit">
+                    <input type="hidden" id="stripe_id" name="stripe_id">
+                    <input type="submit" class="btn btn-primary proceed" value="Confirm Order &raquo;" disabled="disabled" />
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+{%endblock%}

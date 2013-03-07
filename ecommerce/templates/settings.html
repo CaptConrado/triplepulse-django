@@ -1,0 +1,48 @@
+{% extends "text.html" %}
+
+{% block postTitle %}
+Account
+{% endblock %}
+
+{% block extra_css %}
+
+<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/text.css" />
+<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/settings.css" />
+
+{%endblock%}
+
+{% block contentContainer %}
+<div class="navbar" xmlns="http://www.w3.org/1999/html">
+    <div class="navbar-inner">
+        <div class="messages">
+            {% block messages %}
+            {% endblock %}
+        </div>
+        <ul class="nav">
+            {% if active_page == 'profile' %}
+            <li class="active"><a href="profile">Profile</a></li>
+            {% else %}
+            <li><a href="profile">Profile</a></li>
+            {% endif %}
+            {% if active_page == 'shipping' %}
+            <li class="active"><a href="shipping">Shipping</a></li>
+            {% else %}
+            <li><a href="shipping">Shipping</a></li>
+            {% endif %}
+            {% if active_page == 'billing' %}
+            <li class="active"><a href="billing">Update Card</a></li>
+            {% else %}
+            <li><a href="billing">Update Card</a></li>
+            {% endif %}
+        </ul>
+    </div>
+</div>
+{% block settingsContent %}
+<form method="post">
+    {% csrf_token %}
+    {{ form }}
+   <p></p><input type="submit" value="Update" class="btn btn-primary" /></p>
+</form>
+{% endblock %}
+{% endblock %}
+
