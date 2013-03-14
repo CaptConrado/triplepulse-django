@@ -1,0 +1,18 @@
+
+{% extends "skeleton/_root.html" %}
+{% load cms_tags sekizai_tags %}
+
+{% block title %}
+    TriplePulse: {% page_attribute "page_title" %}
+{% endblock %}
+{% block extra_css %}
+    <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/pinboardpost.css" />
+
+{% endblock %}
+
+{% block body %}
+    <div class="x-carveout"></div>
+
+    {% placeholder "content" %}
+
+{%endblock%}

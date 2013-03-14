@@ -1,0 +1,18 @@
+<div class="container header">
+	<a class="logo" href="/">TriplePulse</a>
+	<div class="nav">
+		<a class="text stacks" href="/stacks">Our Stacks</a>
+		<a class="text tips" href="/pinboard#tips">Training Tips</a>
+		<a class="text results" href="/pinboard#results">Results</a>
+		<span class="login">
+            {% if request.user.is_anonymous %}
+            <a class="btn login" href="#">Login</a>
+			<a class="btn btn-primary" href="/signup">Sign Up</a>
+            {% else %}
+            <a class="btn" href="/logout">Log Out</a>
+			<a class="btn btn-primary" href="/account">Account</a>
+            {% endif %}
+		</span>
+	</div>
+	<a class="newsletter" href="#">Get Our Newsletter</a>
+</div>

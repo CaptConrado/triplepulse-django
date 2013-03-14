@@ -1,0 +1,80 @@
+.pinboard{
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+/* Top Navigation */
+
+.pinboard .logo{
+	display: inline-block;
+	width: 690px;
+	height: 72px;
+	text-indent: -9999px;
+	background-image: url('../images/pinboard/tripleYourPulse.png');
+	background-repeat: none;
+	margin-top: 45px;
+	margin-bottom: 22px;
+}
+
+.pinboardNav{
+	text-align: center;
+}
+
+.pinboardNav a.btn{
+	background: #efefef;
+	box-shadow: none;
+	margin: 10px 13px;
+	border-color: #efefef;
+	color: #737373;
+	font-weight: 600;
+}
+
+.pinboardNav a.btn:hover{
+	border-color: #e9e9e9;
+	color: #333;
+}
+
+.pinboardNav a.btn:focus, .pinboardNav a.btn:active{
+	box-shadow: inset 1px 1px 3px rgba(0,0,0,0.1);
+}
+
+/* Posts */
+/* Classes for post size follow the convention .widthHeight */
+
+#posts{
+	margin: 20px auto;
+}
+
+.post{
+	display: block;
+	text-align: left;
+	padding: 9px;
+	border: 1px solid #e9e9e9;
+	background-color: #f9f9f9;
+	box-shadow: inset 0px 0px 10px #e9e9e9;
+	margin-bottom: 20px;
+	color: #8c8c8c;
+	text-decoration: none;
+}
+
+.post.hide{
+	display: none !important;
+}
+
+.post:hover{
+	color: #333;
+	box-shadow: inset 0px 0px 10px #e9e9e9, 1px 1px 2px rgba(0,0,0,0.1);
+	text-decoration: none;
+	
+}
+
+.post:hover .title{
+	color: #333;
+}
+
+.post .title{
+	font-size: 16px;
+	margin-top: 10px;
+	font-weight: bold;
+	color: #454545;
+}

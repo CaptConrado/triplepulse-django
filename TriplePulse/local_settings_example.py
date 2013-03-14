@@ -12,6 +12,12 @@ SECRET_KEY = 'CHANGE_THIS_STRING'
 STRIPE_SECRET = "YOUR_STRIPE_SECRET_KEY"
 STRIPE_PUBLISHABLE = "YOUR_STRIPE_PUBLIC_KEY"
 
+# Mailchimp API Key
+MAILCHIMP_API_KEY = ''
+
+# Mailchimp list ID
+MAILCHIMP_LIST_ID = ''
+
 # Database
 # Set this to the appropriate engine and auth settings
 # likely mysql, or cloudsql if you decide to use AppEngine

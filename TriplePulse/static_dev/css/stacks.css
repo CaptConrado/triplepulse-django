@@ -1,0 +1,157 @@
+/* Hook */
+
+.hook{
+	background-color: #ef6d22;
+	color: white;
+	padding: 5px 0px;
+}
+
+.hook > div, .clincher > div{
+	padding: 60px 0px;	
+	border: 2px solid rgba(255,255,255,0.3);
+}
+
+.hook h1{
+	font-size: 64px;
+	margin-bottom: 25px;
+}
+
+.hook a.btn{
+	box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+	padding: 7px 15px;
+}
+
+/* Infographic columns */ 
+
+.infographics{
+	color: #595959;
+}
+
+.infographics h3{
+	font-size: 18px;
+}
+
+.infographics .image{
+	width: 300px;
+	height: 211px;
+}
+
+.infographics .image.atom{
+	background: url('../images/stacks/atom.png');
+}
+
+.infographics .image.clock{
+	background: url('../images/stacks/clock.png');
+}
+
+.infographics .image.notepad{
+	background: url('../images/stacks/notepad.png');
+}
+
+/* Body Text */
+.bodyText{
+	color: #454545;
+}
+
+.bodyText h3{
+	color: #ee7324;
+}
+
+.bodyText p{
+	line-height: 180%;
+}
+
+/* Right Pane */
+
+.bodyText .span4{
+	text-align: center;
+	padding-top: 55px;
+}
+
+.bodyText .span4 p{
+	color: #4a4a4a;
+	font-size: 22px;
+	font-weight: 600;
+	margin-bottom: 5px;
+	line-height: 22px;
+}
+
+.bodyText .span4 .btn-primary{
+	width: 100%;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	border-radius: 2px;
+	text-align: left;
+	font-size: 40px;
+	font-weight: 100;
+	height: 80px;
+	padding-top: 34px;
+	position: relative;
+	background-color: #ee7625;
+}
+.bodyText .span4 .btn-primary .arrow{
+	background-image: url('../images/stacks/rightArrow.png');
+	width: 61px;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	text-indent: -9999px;
+	display: inline-block;
+	position: absolute;
+	right: 18px;
+	top: 0px;
+}
+
+.bodyText .span4 .image{
+	margin-top: 20px;
+	width: 300px;
+	height: 200px;
+	text-indent: -9999px;
+	background-image: url('../images/stacks/cycling.jpg');
+	background-repeat: no-repeat;
+}
+
+/* Clincher */
+.clincher{
+	padding: 5px 0px;
+	text-align: center;
+	background-color: #ee7324;
+}
+
+.clincher > div{
+	padding: 40px 0px;
+}
+
+.clincher h1{
+	color: #ffc1a6;
+	font-size: 64px;
+}
+
+.clincher a.btn{
+	font-size: 18px;
+	padding: 10px 25px;
+	margin-top: 20px;
+	box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+	transition: all 0.25s ease-in-out;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+}
+
+.clincher a.btn:hover{
+	box-shadow: 2px 2px 8px rgba(0,0,0,0.8);
+	transition: all 0.25s ease-in-out;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+}
+
+.clincher a.btn.btn-inverse{
+	background: #4a4a4a; /* Old browsers */
+	background: -moz-linear-gradient(top, #4a4a4a 0%, #464646 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#4a4a4a), color-stop(100%,#464646)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #4a4a4a 0%,#464646 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #4a4a4a 0%,#464646 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #4a4a4a 0%,#464646 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #4a4a4a 0%,#464646 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4a4a4a', endColorstr='#464646',GradientType=0 ); /* IE6-9 */
+}

@@ -1,0 +1,25 @@
+body{
+    background-color: #f9f9f9;
+    min-width: auto;
+    padding: 0px 30px;
+}
+
+.hook{
+    margin-left: -30px;
+    margin-right: -30px;
+}
+
+.hook > div{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.x-carveout{
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    width: 30px;
+    height: 30px;
+    border-bottom-left-radius: 15px;
+    background-color: #f9f9f9;
+}

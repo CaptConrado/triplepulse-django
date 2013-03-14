@@ -1,0 +1,28 @@
+{% extends "text.html" %}
+{% load cms_tags sekizai_tags menu_tags %}
+
+{% block title %}
+TriplePulse Blog: {% page_attribute "page_title" %}
+{% endblock %}
+
+{% block extra_css %}
+
+<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/text.css" />
+
+{%endblock%}
+
+{% block extra_js %}
+{%endblock%}
+
+
+{% block postTitle %}
+{% page_attribute "page_title" %}
+{% endblock %}
+
+{% block postBody %}
+{% placeholder "content" %}
+{% endblock %}
+
+{% block rightColumn %}
+{% placeholder "right_column" %}
+{%endblock%}

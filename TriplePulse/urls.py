@@ -5,6 +5,7 @@ from pinboard.views import pinboard_posts
 from blog.views import blog_index
 from ecommerce.views import create_and_subscribe_stripe_user, signup, login_user, signup_form, logout_user, stripe_webhook
 from django.views.generic.simple import redirect_to
+from newsletter.views import subscribe_email
 
 admin.autodiscover()
 
@@ -20,8 +21,8 @@ urlpatterns = patterns('',
     url(r'^account/?$', redirect_to, {'url': '/account/profile/'}),
     url(r'^blog/(?P<page_number>\d+)/?$', blog_index),
     url(r'^blog/?$', redirect_to, {'url': '/blog/1'}),
-    url(r'^webhooks/stripe?$', stripe_webhook),
-
+    url(r'^webhooks/stripe/?$', stripe_webhook),
+    url(r'^newsletter/subscribe/?$', subscribe_email),
     url(r'^' + settings.POSTS_ROOT, include('cms.urls')),
 
 )

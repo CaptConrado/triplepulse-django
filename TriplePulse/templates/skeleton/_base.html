@@ -1,0 +1,20 @@
+{% extends "skeleton/_root.html" %}
+{% load cms_tags sekizai_tags %}
+
+{% block body %}
+    {% include "skeleton/_header.html" %}
+    {% block content %}
+    {% endblock %}
+    {% include "skeleton/_footer.html" %}
+{% endblock %}
+
+{% block template_js %}
+<script type="text/javascript" src="{{ STATIC_URL }}js/fancybox/jquery.fancybox.js"></script>
+<script type="text/javascript" src="{{ STATIC_URL }}js/global.js"></script>
+
+{% endblock %}
+
+{% block template_css %}
+<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}js/fancybox/jquery.fancybox.css" />
+
+{% endblock %}

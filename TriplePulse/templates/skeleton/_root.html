@@ -1,0 +1,42 @@
+{% load cms_tags sekizai_tags %}
+
+<!DOCTYPE html>
+<html>
+    <head>
+		<meta charset="utf-8" />
+		<title>
+			{% block title %}
+			
+			{% endblock %}
+		</title>
+		<link rel="icon" href="{{ STATIC_URL }}images/favicon.ico" type="image/x-icon">
+		<link rel="shortcut icon" href="{{ STATIC_URL }}images/favicon.ico" type="image/x-icon">
+				
+		{% render_block "css" %}
+        {% block template_css %}
+        {% endblock %}
+        {% block extra_css %}
+        {% endblock %}
+
+        {% addtoblock "css" %}
+		<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}bootstrap/css/bootstrap.css" />
+		<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/triplepulse.css" />
+		{% endaddtoblock %}
+		{% addtoblock "js" %}
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<script type="text/javascript" src="{{ STATIC_URL }}bootstrap/js/bootstrap.min.js"></script>
+		{% endaddtoblock %}
+        {% block extra_head %}
+        {% endblock %}
+	</head>
+
+    <body>
+        {% block body %}{% endblock %}
+	    {% render_block "js" %}
+        {% block template_js %}
+        {% endblock %}
+        {% block extra_js %}
+        {% endblock %}
+    </body>
+</html>
+

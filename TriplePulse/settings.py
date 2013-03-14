@@ -129,6 +129,7 @@ INSTALLED_APPS = (
     'django.contrib.sites',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'mailchimp',
     'cms',
     'stripe',
     'mptt',
@@ -139,7 +140,6 @@ INSTALLED_APPS = (
     'cms.plugins.text',
     'cms.plugins.video',
     'cms.plugins.teaser',
-
     'pinboard',
     'ecommerce',
 

@@ -1,9 +1,9 @@
-Django==1.4
+Django
 stripe
 django-cms
 south
 django-mptt
 django-classy-tags
 dango-sekizai
-south
 html5lib
+django-mailchimp-v1.3

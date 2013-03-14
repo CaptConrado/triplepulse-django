@@ -1,0 +1,230 @@
+/* Marquee/hero */
+
+.marquee{
+	min-height: 450px;
+	background-color: #022256;
+	background-image: url('../images/landing/marquee.jpg');
+	background-position: bottom center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	color: white;
+}
+
+
+.marquee .btn-primary{
+	margin-top: 40px;
+	border-radius: 3px;
+	box-shadow: 2px 2px 5px rgba(0,0,0,.4);
+}
+
+.marquee h1, .marquee h2{
+	text-shadow: 1px 1px 2px rgba(0,0,0,.4);	
+}
+
+.marquee h2{
+	font-weight: 200;
+	margin-top: 20px;
+	letter-spacing: 0px;
+}
+
+.marquee h1{
+	font-size: 50px;
+	line-height: 1.1em;
+}
+
+@media only screen and (max-width : 1200px) {
+	.marquee{
+		min-height: 370px;
+		background-position: bottom right;
+	}
+}
+
+@media only screen and (min-width : 1650px) {
+	.marquee{
+		min-height: 550px;
+	}
+}
+
+/* How it works */
+
+.howItWorks h2{
+	color: #ee7324;
+}
+
+.howItWorks, .howItWorks a{
+	color: #595959;
+}
+
+.howItWorks .image{
+	display: inline-block;
+	margin: 10px auto;
+	text-indent: -9999px;
+	width: 300px;
+	height: 180px;
+	background-repeat: none;
+}
+
+.howItWorks .image.step1{
+	background: url('../images/landing/howItWorks/tile1.jpg');
+}
+
+.howItWorks .image.step2{
+	background: url('../images/landing/howItWorks/tile2.jpg');
+}
+
+.howItWorks .image.step3{
+	background: url('../images/landing/howItWorks/tile3.jpg');
+}
+
+
+/* What's in your pack? */
+.whatsInYourPack{
+	background-color: rgb(242,242,242);
+	font-size: 16px;
+	font-weight: 600;
+	color: #333;
+}
+
+.whatsInYourPack a{
+	color: #333;
+}
+
+.whatsInYourPack h2{
+	margin-bottom: 40px;
+}
+
+.whatsInYourPack .monthsSupply{
+	color: #666;
+}
+
+.whatsInYourPack .span4{
+	text-align: center;
+}
+
+.whatsInYourPack .header{
+	display: inline-block;
+	padding: 5px 10px;
+	color: white;
+	background: #da4325; /* Old browsers */
+	background: -moz-linear-gradient(top, #da4325 0%, #d43d22 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#da4325), color-stop(100%,#d43d22)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #da4325 0%,#d43d22 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #da4325 0%,#d43d22 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #da4325 0%,#d43d22 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #da4325 0%,#d43d22 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#da4325', endColorstr='#d43d22',GradientType=0 ); /* IE6-9 */
+	border: 1px solid #c62f16;
+	box-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+	border-radius: 3px;
+}
+
+.whatsInYourPack .image{
+	display: inline-block;
+	margin-top: 20px;
+	width: 280px;
+	height: 150px;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.whatsInYourPack .span4{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	border-left: 1px solid rgb(240,188,158);
+}
+
+.whatsInYourPack .span4:first-child{
+	border-left: none;	
+}
+
+.whatsInYourPack .image.aminoAcids{
+	background-image: url('../images/landing/whatsInYourPack/aminoAcids.png');
+}
+
+.whatsInYourPack .image.freeSamples{
+	background-image: url('../images/landing/whatsInYourPack/freeSamples.png');
+}
+
+.whatsInYourPack .image.hourGlass{
+	background-image: url('../images/landing/whatsInYourPack/hourGlass.png');
+}
+
+.whatsInYourPack .image.pills{
+	background-image: url('../images/landing/whatsInYourPack/pills.png');
+}
+
+.whatsInYourPack .image.glutamine{
+	background-image: url('../images/landing/whatsInYourPack/glutamine.png');
+}
+
+.whatsInYourPack .image.electrolytes{
+	background-image: url('../images/landing/whatsInYourPack/electrolytes.png');
+}
+
+
+/* Roster */
+.roster .span4{
+	text-align: center;
+}
+
+.roster a{
+	color: #454545;
+}
+
+.roster .quote{
+	padding-top: 40px;
+	font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+	text-transform: uppercase;
+	font-size: 22px;
+	letter-spacing: -1px;
+}
+
+.roster .quote p:first-child{
+	line-height: 26px;
+}
+
+.roster .quote .title{
+	font-size: 14px;
+	letter-spacing: 0px;
+}
+
+.roster .quote .dash{
+	text-decoration: none !important;
+	color: #ddd;
+	margin: 5px 0px;
+}
+
+.roster p{
+	margin: 0px;
+}
+
+.roster .image{
+	display: inline-block;
+	text-indent: -9999px;
+	margin-top: 20px;
+	width: 280px;
+	height: 200px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	box-sizing: border-box
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	border: 1px solid #ccc;
+	transition: all 0.25s ease-in-out;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+}
+
+.roster .image:hover{
+	box-shadow: inset 0px 0px 60px rgba(255,255,255,0.4), 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+.roster .image.tile1{
+	background-image: url('../images/landing/roster/swimming.jpg');
+}
+
+.roster .image.tile3{
+	background-image: url('../images/landing/roster/cycling.jpg');
+}

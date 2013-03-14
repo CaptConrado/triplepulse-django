@@ -1,0 +1,20 @@
+{% extends "text.html" %}
+{% load cms_tags sekizai_tags %}
+
+{% block title %}
+    TriplePulse: {% page_attribute "page_title" %}
+{% endblock %}
+
+
+{% block extra_css %}
+    <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/text.css" />
+    <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/pinboardpost.css" />
+
+{% endblock %}
+
+{% block postTitle %}
+    {% page_attribute "page_title" %}
+{% endblock %}
+{% block contentContainer %}
+    {% placeholder "content" %}
+{%endblock%}

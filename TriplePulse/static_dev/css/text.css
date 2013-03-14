@@ -1,0 +1,22 @@
+.hook{
+	background-color: #ef6d22;
+	color: white;
+	padding-bottom: 5px;
+	margin-bottom: 30px;
+}
+
+.hook > div{
+	padding: 30px 0px;	
+	border-bottom: 2px solid rgba(255,255,255,0.3);
+}
+
+.span4 img{
+	max-width: 300px;
+	float: right;
+}
+
+h3{
+	color: #ee7324;
+	text-transform: upper;
+}
+

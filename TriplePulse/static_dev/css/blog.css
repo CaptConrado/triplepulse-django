@@ -1,0 +1,17 @@
+div.preview{
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+    margin-bottom: 40px;
+}
+
+.recentPosts{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    text-align: right;
+    padding-left: 30px
+}
+
+.recentPosts ul{
+    list-style-type: none;
+}
