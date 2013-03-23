@@ -1,3 +1,5 @@
+FACEBOOK_APP_ID = '554024687948944'
+
 function getCookie(name) {
     var cookieValue = null;
     if (document.cookie && document.cookie != '') {
@@ -59,8 +61,8 @@ $(document).ready(function(){
 	});
 	$('.modal.newsletter form').submit(function(event){
 		event.preventDefault();
-		$('.newsletterSignup').hide();
-		$('.newsletterConfirm').fadeIn();
+        var email = $(this).find('.email').val();
+        subscribeNewsletter({'email' : email})
 	})
 
     //AJAX Login
@@ -76,8 +78,68 @@ $(document).ready(function(){
             $('#loginForm input[type=submit]').removeAttr('disabled')
         }, 'json')
     })
+
+//    Social newsletter login
+    $('a.fbNewsletter').click(function(event){
+        event.preventDefault();
+        facebookLogin();
+    })
 })
 
 function errorHtml(message){
     return '<div class="alert"><button type="button" class="close" data-dismiss="alert">&times;</button>' + message + '</div>'
+}
+
+
+window.fbAsyncInit = function() {
+    // init the FB JS SDK
+    FB.init({
+        appId      : FACEBOOK_APP_ID, // App ID from the App Dashboard
+        status     : true, // check the login status upon init?
+        cookie     : true, // set sessions cookies to allow your server to access the session?
+        xfbml      : true  // parse XFBML tags on this page?
+});
+
+// Additional initialization code such as adding Event Listeners goes here
+
+};
+
+// Load the SDK's source Asynchronously
+// Note that the debug version is being actively developed and might
+// contain some type checks that are overly strict.
+// Please report such bugs using the bugs tool.
+(function(d, debug){
+    var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
+    if (d.getElementById(id)) {return;}
+js = d.createElement('script'); js.id = id; js.async = true;
+js.src = "//connect.facebook.net/en_US/all" + (debug ? "/debug" : "") + ".js";
+ref.parentNode.insertBefore(js, ref);
+}(document, /*debug*/ false));
+
+function facebookLogin(){
+    FB.login(function(response) {
+        if (response.authResponse) {
+            FB.api('/me', function(response) {
+                postdata = {
+                    'email' : response.email,
+                    'first' : response.first_name,
+                    'last' : response.last_name
+                }
+
+                subscribeNewsletter(postdata)
+            });
+        }
+    }, {scope: 'email'});
+}
+
+function subscribeNewsletter(postdata){
+    $.post('/newsletter/subscribe/', postdata, function(response){
+        if (response.success){
+            $('.newsletterSignup').hide();
+            $('.newsletterConfirm').fadeIn();
+        }else if(response.error){
+            $('.newsletterErrors').html(errorHtml(response.error));
+        }
+    }, 'json')
+
 }

@@ -20,7 +20,7 @@ class Shipment(models.Model):
 
         )
 
-    type = models.integerField(choices=TYPE_CHOICES)
+    type = models.IntegerField(choices=TYPE_CHOICES)
     def __unicode__(self):
         return unicode(self.user) + ' | ' + unicode(self.date)
 
