@@ -1,4 +1,4 @@
-FACEBOOK_APP_ID = '554024687948944'
+FACEBOOK_APP_ID = 'YOUR APP ID GOES HERE'
 
 function getCookie(name) {
     var cookieValue = null;

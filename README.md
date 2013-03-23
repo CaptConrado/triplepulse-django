@@ -10,19 +10,21 @@ Deploying
 2.) Create a local_settings.py file. local_settings_example.py should be a good reference. This file defines your API keys,
 crypto keys, database connections, and debugging settings. It will be omitted from GitHub for security reasons.
 
-3.) Make sure the database you linked to in local_settings.py is running, then run "python manage.py
+3.) Set you facebook app ID in the first line global.js
+
+4.) Make sure the database you linked to in local_settings.py is running, then run "python manage.py
 syndcb," then "python manage.py migrate"
 
-4.) If fixtures weren't loaded in by syncb, run "python manage.py loaddata TriplePulse/fixtures/initial_data.json" to import
+5.) If fixtures weren't loaded in by syncb, run "python manage.py loaddata TriplePulse/fixtures/initial_data.json" to import
 pages that are stored in Django CMS (like terms, about, etc.)
 
-5.) Create a first superuser by running "python manage.py createsuperuser"
+6.) Create a first superuser by running "python manage.py createsuperuser"
 
-6.) For static files, you may want to use a cdn. Use "python manage.py collectstatic" to collect the static files in the
+7.) For static files, you may want to use a cdn. Use "python manage.py collectstatic" to collect the static files in the
 static root. Copy these to a CDN, then set the static root to the CDN address. For more info:
 https://docs.djangoproject.com/en/dev/howto/static-files/#staticfiles-production
 
-7.) Run whatever webserver you choose (App Engine makes this easy, or Nginx with Gunicorn is easy to setup)
+8.) Run whatever webserver you choose (App Engine makes this easy, or Nginx with Gunicorn is easy to setup)
 
 You're done!
 
