@@ -149,6 +149,7 @@ function subscribeNewsletter(postdata){
         if (response.success){
             $('.newsletterSignup').hide();
             $('.newsletterConfirm').fadeIn();
+            _gaq.push(['_trackEvent', 'Newsletter', 'Signup'])
         }else if(response.error){
             $('.newsletterErrors').html(errorHtml(response.error));
         }

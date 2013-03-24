@@ -122,10 +122,11 @@ function makePostHTML(entry){
 
 function setCategory(){
 	// Hide and show content based on category
-	
+
 	visibleCategory = hashNav[window.location.hash];
 	$('.header .nav a.text').removeClass('active');
 	$('.header .nav a.text.' + visibleCategory).addClass('active');
+    _gaq.push(['_trackPageview', '/pinboard/' + window.location.hash]);
 }
 
 

@@ -23,6 +23,8 @@ function advanceSlide(subClass){
 		var slide = pages[curPage];
 	}
 	$('.game .' + slide).fadeIn();
+    _gaq.push(['_trackPageview', '/signup/' + curPage]);
+
 }
 
 $(document).ready(function(){
