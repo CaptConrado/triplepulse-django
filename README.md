@@ -10,7 +10,7 @@ Deploying
 2.) Create a local_settings.py file. local_settings_example.py should be a good reference. This file defines your API keys,
 crypto keys, database connections, and debugging settings. It will be omitted from GitHub for security reasons.
 
-3.) Set you facebook app ID in the first line global.js
+3.) Set you facebook app ID and your Google analytics tracking ID in the first two lines of global.js
 
 4.) Make sure the database you linked to in local_settings.py is running, then run "python manage.py
 syndcb," then "python manage.py migrate"
